@@ -1,0 +1,1648 @@
+{
+  "regulations_version": "2.0",
+  "last_updated": "2026-06-26",
+  "source": "IBM Bobathon 2025 — EcoComply real hackathon dataset (regulatory_updates.json)",
+  "regulations": [
+    {
+      "id": "REG001",
+      "title": "RoHS heavy-metal limits review (Pb, Hg, Cd, Cr VI)",
+      "short_name": "RoHS — RoHS heavy-metal limits review (Pb, Hg,",
+      "regulation_number": "Directive 2011/65/EU, Annex II review",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0065",
+      "category": "chemical_compliance",
+      "status": "active",
+      "published_date": "2026-05-04",
+      "effective_date": "2027-07-22",
+      "deadline_date": "2027-07-22",
+      "urgency": "high",
+      "summary": "The Commission has reopened the Annex II review for the four restricted heavy metals. Several lighting and legacy-electronics exemptions for lead and mercury are set to lapse, meaning equipment containing these metals above 0.1% (0.01% for cadmium) must be reformulated or pulled from the EU market.",
+      "what_changed": "The Commission has reopened the Annex II review for the four restricted heavy metals. Several lighting and legacy-electronics exemptions for lead and mercury are set to lapse, meaning equipment containing these metals above 0.1% (0.01% for cadmium) must be reformulated or pulled from the EU market.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "RoHS"
+      ],
+      "required_actions": [
+        "Confirm homogeneous-material content of Pb/Hg/Cd/Cr VI; re-test affected SKUs."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to EEE placed on the EU market containing the listed heavy metals above threshold.",
+      "scope_substances": [
+        "lead",
+        "mercury",
+        "cadmium",
+        "hexavalent_chromium"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RoHS",
+      "tags": [
+        "rohs",
+        "lead",
+        "mercury",
+        "cadmium",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG002",
+      "title": "RoHS to restrict medium-chain chlorinated paraffins (MCCP)",
+      "short_name": "RoHS — RoHS to restrict medium-chain chlorinate",
+      "regulation_number": "Annex II amendment (MCCP)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0065",
+      "category": "chemical_compliance",
+      "status": "new_update",
+      "published_date": "2026-05-11",
+      "effective_date": "2028-01-01",
+      "deadline_date": "2028-01-01",
+      "urgency": "medium",
+      "summary": "MCCPs used as plasticisers/flame retardants in cabling and insulation are proposed for addition to the RoHS restricted list.",
+      "what_changed": "MCCPs used as plasticisers/flame retardants in cabling and insulation are proposed for addition to the RoHS restricted list.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "RoHS"
+      ],
+      "required_actions": [
+        "Screen cable insulation and plasticised parts for MCCP."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to EEE containing MCCP above the restriction threshold.",
+      "scope_substances": [
+        "MCCP"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RoHS",
+      "tags": [
+        "rohs",
+        "mccp",
+        "2028"
+      ]
+    },
+    {
+      "id": "REG003",
+      "title": "RoHS lead exemption renewed for certain medical sensors",
+      "short_name": "RoHS — RoHS lead exemption renewed for certain",
+      "regulation_number": "Annex IV exemption renewal",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0065",
+      "category": "chemical_compliance",
+      "status": "active",
+      "published_date": "2026-05-18",
+      "effective_date": "2026-09-01",
+      "deadline_date": "2026-09-01",
+      "urgency": "low",
+      "summary": "Exemption permitting lead in solder of specific in-vivo and body-worn medical sensors is renewed for a further term. Affected manufacturers should re-document the exemption in their technical file.",
+      "what_changed": "Exemption permitting lead in solder of specific in-vivo and body-worn medical sensors is renewed for a further term. Affected manufacturers should re-document the exemption in their technical file.",
+      "affected_product_categories": [
+        "medical_wearable"
+      ],
+      "affected_compliance_streams": [
+        "RoHS"
+      ],
+      "required_actions": [
+        "Update technical documentation to cite the renewed exemption."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to medical EEE relying on the lead-in-solder exemption.",
+      "scope_substances": [
+        "lead"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RoHS",
+      "tags": [
+        "rohs",
+        "lead",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG004",
+      "title": "REACH SVHC list adds bisphenol A; reaffirms DEHP",
+      "short_name": "REACH — REACH SVHC list adds bisphenol A; reaffi",
+      "regulation_number": "SVHC Candidate List update",
+      "source_url": "https://echa.europa.eu/candidate-list-table",
+      "category": "chemical_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-30",
+      "effective_date": "2026-04-30",
+      "deadline_date": "2026-10-30",
+      "urgency": "medium",
+      "summary": "Bisphenol A (BPA) is added to the Candidate List of Substances of Very High Concern and DEHP is reaffirmed. Articles containing either above 0.1% w/w trigger SCIP notification and supply-chain communication duties.",
+      "what_changed": "Bisphenol A (BPA) is added to the Candidate List of Substances of Very High Concern and DEHP is reaffirmed. Articles containing either above 0.1% w/w trigger SCIP notification and supply-chain communication duties.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "REACH",
+        "SCIP"
+      ],
+      "required_actions": [
+        "Run SVHC screening; file SCIP notifications for affected articles."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to any article containing BPA or DEHP > 0.1% w/w on the EU market.",
+      "scope_substances": [
+        "BPA",
+        "DEHP"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "REACH",
+      "tags": [
+        "reach",
+        "bpa",
+        "dehp",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG005",
+      "title": "REACH SVHC list adds 1,4-dioxane",
+      "short_name": "REACH — REACH SVHC list adds 1,4-dioxane",
+      "regulation_number": "SVHC Candidate List update",
+      "source_url": "https://echa.europa.eu/candidate-list-table",
+      "category": "chemical_compliance",
+      "status": "new_update",
+      "published_date": "2026-05-02",
+      "effective_date": "2026-05-02",
+      "deadline_date": "2026-11-02",
+      "urgency": "low",
+      "summary": "1,4-Dioxane is added to the SVHC Candidate List. Producers of articles containing it above 0.1% w/w must notify and inform recipients.",
+      "what_changed": "1,4-Dioxane is added to the SVHC Candidate List. Producers of articles containing it above 0.1% w/w must notify and inform recipients.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "REACH",
+        "SCIP"
+      ],
+      "required_actions": [
+        "Confirm absence/presence of 1,4-dioxane in articles."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to articles containing 1,4-dioxane > 0.1% w/w (none expected in this portfolio).",
+      "scope_substances": [
+        "dioxane"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "REACH",
+      "tags": [
+        "reach",
+        "dioxane",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG006",
+      "title": "REACH restriction on PFHxA in textiles and coatings",
+      "short_name": "REACH — REACH restriction on PFHxA in textiles a",
+      "regulation_number": "Annex XVII restriction (PFHxA)",
+      "source_url": "https://echa.europa.eu/candidate-list-table",
+      "category": "chemical_compliance",
+      "status": "new_update",
+      "published_date": "2026-03-15",
+      "effective_date": "2027-03-15",
+      "deadline_date": "2027-03-15",
+      "urgency": "medium",
+      "summary": "A restriction on PFHxA and related substances targets water-repellent coatings on wearable straps and outdoor electronics housings.",
+      "what_changed": "A restriction on PFHxA and related substances targets water-repellent coatings on wearable straps and outdoor electronics housings.",
+      "affected_product_categories": [
+        "wearable",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "REACH",
+        "SCIP"
+      ],
+      "required_actions": [
+        "Identify PFAS/PFHxA coatings on straps and housings; source alternatives."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to wearables and drones with PFHxA-based coatings.",
+      "scope_substances": [
+        "PFAS_PFHxA"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "REACH",
+      "tags": [
+        "reach",
+        "pfas_pfhxa",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG007",
+      "title": "REACH SVHC list adds TBBPA (flame retardant)",
+      "short_name": "REACH — REACH SVHC list adds TBBPA (flame retard",
+      "regulation_number": "SVHC Candidate List update",
+      "source_url": "https://echa.europa.eu/candidate-list-table",
+      "category": "chemical_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-10",
+      "effective_date": "2026-04-10",
+      "deadline_date": "2026-10-10",
+      "urgency": "medium",
+      "summary": "Tetrabromobisphenol A, common on printed circuit boards, is added to the SVHC Candidate List.",
+      "what_changed": "Tetrabromobisphenol A, common on printed circuit boards, is added to the SVHC Candidate List.",
+      "affected_product_categories": [
+        "networking",
+        "iot_module"
+      ],
+      "affected_compliance_streams": [
+        "REACH",
+        "SCIP"
+      ],
+      "required_actions": [
+        "Screen PCBs for TBBPA; prepare SCIP notifications."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to networking/IoT equipment with TBBPA-containing boards.",
+      "scope_substances": [
+        "TBBPA"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "REACH",
+      "tags": [
+        "reach",
+        "tbbpa",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG008",
+      "title": "WEEE crossed-out wheelie-bin marking & producer registration update",
+      "short_name": "WEEE — WEEE crossed-out wheelie-bin marking & p",
+      "regulation_number": "Directive 2012/19/EU marking update",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012L0019",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-02-20",
+      "effective_date": "2026-08-15",
+      "deadline_date": "2026-08-15",
+      "urgency": "medium",
+      "summary": "Updated marking and producer-registration obligations apply to all electrical and electronic equipment placed on the EU market.",
+      "what_changed": "Updated marking and producer-registration obligations apply to all electrical and electronic equipment placed on the EU market.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "WEEE"
+      ],
+      "required_actions": [
+        "Verify WEEE marking and national producer registrations."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to all EEE on the EU market.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "WEEE",
+      "tags": [
+        "weee",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG009",
+      "title": "Germany EEE producer registration deadline (ElektroG)",
+      "short_name": "WEEE — Germany EEE producer registration deadli",
+      "regulation_number": "stiftung ear / ElektroG registration",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012L0019",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-03-01",
+      "effective_date": "2026-07-31",
+      "deadline_date": "2026-07-31",
+      "urgency": "high",
+      "summary": "Producers selling electrical and electronic equipment into the German market must complete or renew their stiftung ear registration before the deadline. Selling without it is prohibited in Germany.",
+      "what_changed": "Producers selling electrical and electronic equipment into the German market must complete or renew their stiftung ear registration before the deadline. Selling without it is prohibited in Germany.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "WEEE"
+      ],
+      "required_actions": [
+        "Confirm German EAR registration for all EEE sold in DE."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to EEE sold in Germany (DE) only.",
+      "scope_substances": [],
+      "scope_markets": [
+        "DE"
+      ],
+      "regulation_family": "WEEE",
+      "tags": [
+        "weee",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG010",
+      "title": "Battery passport required for LMT and industrial (>2 kWh) batteries",
+      "short_name": "Battery — Battery passport required for LMT and in",
+      "regulation_number": "Regulation (EU) 2023/1542, Art. 77 (battery passport)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1542",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-18",
+      "effective_date": "2027-02-18",
+      "deadline_date": "2027-02-18",
+      "urgency": "high",
+      "summary": "From the application date, a digital battery passport is mandatory for light-means-of-transport (LMT) batteries and industrial batteries above 2 kWh, as well as EV batteries. Portable consumer batteries are out of scope of the passport requirement.",
+      "what_changed": "From the application date, a digital battery passport is mandatory for light-means-of-transport (LMT) batteries and industrial batteries above 2 kWh, as well as EV batteries. Portable consumer batteries are out of scope of the passport requirement.",
+      "affected_product_categories": [
+        "battery_pack",
+        "emobility_battery"
+      ],
+      "affected_compliance_streams": [
+        "Battery",
+        "CE"
+      ],
+      "required_actions": [
+        "Stand up a battery passport (QR + data carrier) for in-scope batteries."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to LMT batteries and industrial batteries; NOT to portable consumer batteries.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "Battery",
+      "tags": [
+        "battery",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG011",
+      "title": "Carbon footprint declaration for industrial and EV batteries",
+      "short_name": "Battery — Carbon footprint declaration for industr",
+      "regulation_number": "Regulation (EU) 2023/1542, Art. 7 (carbon footprint)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1542",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-18",
+      "effective_date": "2027-08-18",
+      "deadline_date": "2027-08-18",
+      "urgency": "medium",
+      "summary": "Industrial (>2 kWh) and EV batteries must carry a carbon footprint declaration and performance class. LMT batteries follow at a later date.",
+      "what_changed": "Industrial (>2 kWh) and EV batteries must carry a carbon footprint declaration and performance class. LMT batteries follow at a later date.",
+      "affected_product_categories": [
+        "battery_pack",
+        "emobility_battery"
+      ],
+      "affected_compliance_streams": [
+        "Battery",
+        "CE"
+      ],
+      "required_actions": [
+        "Compile life-cycle carbon footprint for industrial battery SKUs."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to industrial and EV batteries (LMT later).",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "Battery",
+      "tags": [
+        "battery",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG012",
+      "title": "Portable batteries must be user-removable and replaceable",
+      "short_name": "Battery — Portable batteries must be user-removabl",
+      "regulation_number": "Regulation (EU) 2023/1542, Art. 11 (removability)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1542",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-05-22",
+      "effective_date": "2027-02-18",
+      "deadline_date": "2027-02-18",
+      "urgency": "high",
+      "summary": "Devices powered by portable or button-cell batteries must be designed so that end users can readily remove and replace the battery.",
+      "what_changed": "Devices powered by portable or button-cell batteries must be designed so that end users can readily remove and replace the battery.",
+      "affected_product_categories": [
+        "audio",
+        "wearable",
+        "smart_home",
+        "drone",
+        "battery_pack"
+      ],
+      "affected_compliance_streams": [
+        "Battery",
+        "CE"
+      ],
+      "required_actions": [
+        "Redesign enclosures for user-replaceable cells; update manuals."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to consumer devices with portable or button-cell batteries.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "Battery",
+      "tags": [
+        "battery",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG013",
+      "title": "Minimum recycled content for industrial batteries",
+      "short_name": "Battery — Minimum recycled content for industrial",
+      "regulation_number": "Regulation (EU) 2023/1542, Art. 8 (recycled content)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1542",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-05-22",
+      "effective_date": "2028-08-18",
+      "deadline_date": "2028-08-18",
+      "urgency": "low",
+      "summary": "Industrial and EV batteries must document minimum recycled cobalt, lithium and nickel content.",
+      "what_changed": "Industrial and EV batteries must document minimum recycled cobalt, lithium and nickel content.",
+      "affected_product_categories": [
+        "battery_pack",
+        "emobility_battery"
+      ],
+      "affected_compliance_streams": [
+        "Battery",
+        "CE"
+      ],
+      "required_actions": [
+        "Collect recycled-content data from cell suppliers."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to industrial and EV batteries.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "Battery",
+      "tags": [
+        "battery",
+        "2028"
+      ]
+    },
+    {
+      "id": "REG014",
+      "title": "USB-C common charger mandate for portable electronics",
+      "short_name": "RED — USB-C common charger mandate for portabl",
+      "regulation_number": "Directive 2014/53/EU, Art. 3(4) (common charger)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014L0053",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-01-12",
+      "effective_date": "2024-12-28",
+      "deadline_date": "2024-12-28",
+      "urgency": "high",
+      "summary": "Portable consumer electronics that recharge via a wired cable must use a USB-C receptacle. Devices still shipping with micro-USB or proprietary connectors must transition. The obligation applies at the point of placing on the EU market.",
+      "what_changed": "Portable consumer electronics that recharge via a wired cable must use a USB-C receptacle. Devices still shipping with micro-USB or proprietary connectors must transition. The obligation applies at the point of placing on the EU market.",
+      "affected_product_categories": [
+        "audio",
+        "wearable",
+        "smart_home",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "RED"
+      ],
+      "required_actions": [
+        "Switch wired-charge ports to USB-C across in-scope SKUs."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to portable electronics with a wired charging port (USB-C/micro-USB/proprietary).",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RED",
+      "tags": [
+        "red",
+        "2024"
+      ]
+    },
+    {
+      "id": "REG015",
+      "title": "RED cybersecurity requirements for internet-connected radio equipment",
+      "short_name": "RED — RED cybersecurity requirements for inter",
+      "regulation_number": "Directive 2014/53/EU, Art. 3(3)(d)(e)(f) (cybersecurity)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014L0053",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-02-01",
+      "effective_date": "2025-08-01",
+      "deadline_date": "2025-08-01",
+      "urgency": "high",
+      "summary": "Radio equipment that connects to the internet must meet network-protection, personal-data and fraud-prevention requirements. Conformity via harmonised standard EN 18031.",
+      "what_changed": "Radio equipment that connects to the internet must meet network-protection, personal-data and fraud-prevention requirements. Conformity via harmonised standard EN 18031.",
+      "affected_product_categories": [
+        "smart_home",
+        "networking",
+        "audio",
+        "wearable",
+        "iot_module",
+        "drone",
+        "medical_wearable"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "RED"
+      ],
+      "required_actions": [
+        "Assess against EN 18031; update risk assessment and firmware."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to radio equipment that is internet-connected.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RED",
+      "tags": [
+        "red",
+        "2025"
+      ]
+    },
+    {
+      "id": "REG016",
+      "title": "Updated harmonised standards for short-range devices",
+      "short_name": "RED — Updated harmonised standards for short-r",
+      "regulation_number": "Harmonised standard list update",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014L0053",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-03-22",
+      "effective_date": "2027-03-22",
+      "deadline_date": "2027-03-22",
+      "urgency": "low",
+      "summary": "New harmonised standards are cited for short-range radio devices; presumption of conformity under the previous versions ends after a transition period.",
+      "what_changed": "New harmonised standards are cited for short-range radio devices; presumption of conformity under the previous versions ends after a transition period.",
+      "affected_product_categories": [
+        "smart_home",
+        "networking",
+        "audio",
+        "wearable",
+        "iot_module",
+        "drone",
+        "medical_wearable"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "RED"
+      ],
+      "required_actions": [
+        "Re-assess radio test reports against the new standard versions."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to radio equipment.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RED",
+      "tags": [
+        "red",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG017",
+      "title": "PPWR: recycled content and reduction targets for plastic packaging",
+      "short_name": "PPWR — PPWR: recycled content and reduction tar",
+      "regulation_number": "Regulation (EU) 2025/40",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32025R0040",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-02-08",
+      "effective_date": "2027-08-12",
+      "deadline_date": "2027-08-12",
+      "urgency": "medium",
+      "summary": "Plastic packaging must meet minimum recycled-content thresholds and packaging minimisation rules. Plastic film wraps are a specific focus.",
+      "what_changed": "Plastic packaging must meet minimum recycled-content thresholds and packaging minimisation rules. Plastic film wraps are a specific focus.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "EPR"
+      ],
+      "required_actions": [
+        "Audit packaging; switch to compliant recycled or reduced formats."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to products placed on the EU market using plastic-film packaging.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "PPWR",
+      "tags": [
+        "ppwr",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG018",
+      "title": "PPWR: harmonised packaging material labelling",
+      "short_name": "PPWR — PPWR: harmonised packaging material labe",
+      "regulation_number": "Regulation (EU) 2025/40, labelling",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32025R0040",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-02-08",
+      "effective_date": "2028-08-12",
+      "deadline_date": "2028-08-12",
+      "urgency": "low",
+      "summary": "All packaging must carry harmonised material-composition and sorting labels.",
+      "what_changed": "All packaging must carry harmonised material-composition and sorting labels.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "EPR"
+      ],
+      "required_actions": [
+        "Add harmonised sorting labels to all packaging."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to all packaging on the EU market.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "PPWR",
+      "tags": [
+        "ppwr",
+        "2028"
+      ]
+    },
+    {
+      "id": "REG019",
+      "title": "GPSR: traceability and economic-operator obligations for consumer products",
+      "short_name": "GPSR — GPSR: traceability and economic-operator",
+      "regulation_number": "Regulation (EU) 2023/988",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R0988",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-01-20",
+      "effective_date": "2024-12-13",
+      "deadline_date": "2024-12-13",
+      "urgency": "medium",
+      "summary": "Consumer products need an EU-based responsible economic operator, traceability information and safety documentation. Medical devices and purely industrial equipment follow their own regimes.",
+      "what_changed": "Consumer products need an EU-based responsible economic operator, traceability information and safety documentation. Medical devices and purely industrial equipment follow their own regimes.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "GPSR"
+      ],
+      "required_actions": [
+        "Confirm responsible person, traceability labelling and risk file."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to consumer products (excludes medical and industrial-only equipment).",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "GPSR",
+      "tags": [
+        "gpsr",
+        "2024"
+      ]
+    },
+    {
+      "id": "REG020",
+      "title": "GPSR: child-safety requirements for products with button/coin cells",
+      "short_name": "GPSR — GPSR: child-safety requirements for prod",
+      "regulation_number": "Regulation (EU) 2023/988, button cells",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R0988",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-03-05",
+      "effective_date": "2026-12-13",
+      "deadline_date": "2026-12-13",
+      "urgency": "high",
+      "summary": "Products containing button or coin cell batteries must secure the battery compartment against child access and carry specific warnings.",
+      "what_changed": "Products containing button or coin cell batteries must secure the battery compartment against child access and carry specific warnings.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "GPSR"
+      ],
+      "required_actions": [
+        "Add secured compartments and warnings on button-cell products."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to any consumer product with a button/coin cell.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "GPSR",
+      "tags": [
+        "gpsr",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG021",
+      "title": "ESPR Digital Product Passport pilot for chargers, displays, batteries and networking",
+      "short_name": "ESPR — ESPR Digital Product Passport pilot for",
+      "regulation_number": "Regulation (EU) 2024/1781 (DPP)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1781",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-02",
+      "effective_date": "2027-07-01",
+      "deadline_date": "2027-07-01",
+      "urgency": "medium",
+      "summary": "A Digital Product Passport pilot covers external power supplies, displays, standalone batteries and networking equipment, requiring a machine-readable data carrier with material and repair information.",
+      "what_changed": "A Digital Product Passport pilot covers external power supplies, displays, standalone batteries and networking equipment, requiring a machine-readable data carrier with material and repair information.",
+      "affected_product_categories": [
+        "power_supply",
+        "display",
+        "battery_pack",
+        "networking"
+      ],
+      "affected_compliance_streams": [
+        "ESPR",
+        "CE"
+      ],
+      "required_actions": [
+        "Prepare DPP data model and QR data carrier for in-scope categories."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to power supplies, displays, battery packs and networking equipment.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "ESPR",
+      "tags": [
+        "espr",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG022",
+      "title": "Updated ecodesign efficiency for external power supplies",
+      "short_name": "ESPR — Updated ecodesign efficiency for externa",
+      "regulation_number": "Ecodesign for external power supplies",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1781",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-03-28",
+      "effective_date": "2027-04-01",
+      "deadline_date": "2027-04-01",
+      "urgency": "medium",
+      "summary": "External power supplies must meet revised no-load and active-mode efficiency limits.",
+      "what_changed": "External power supplies must meet revised no-load and active-mode efficiency limits.",
+      "affected_product_categories": [
+        "power_supply"
+      ],
+      "affected_compliance_streams": [
+        "ESPR",
+        "CE"
+      ],
+      "required_actions": [
+        "Re-test charger efficiency against new ecodesign limits."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to external power supplies.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "ESPR",
+      "tags": [
+        "espr",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG023",
+      "title": "Energy label rescaling for electronic displays",
+      "short_name": "EnergyLabel — Energy label rescaling for electronic di",
+      "regulation_number": "Regulation (EU) 2017/1369, displays",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R1369",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-04-14",
+      "effective_date": "2027-03-01",
+      "deadline_date": "2027-03-01",
+      "urgency": "medium",
+      "summary": "Electronic displays move to a rescaled A-G energy label; existing labels and database entries must be updated.",
+      "what_changed": "Electronic displays move to a rescaled A-G energy label; existing labels and database entries must be updated.",
+      "affected_product_categories": [
+        "display"
+      ],
+      "affected_compliance_streams": [
+        "EnergyLabel"
+      ],
+      "required_actions": [
+        "Regenerate energy labels and update EPREL entries for displays."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to electronic displays/monitors.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "EnergyLabel",
+      "tags": [
+        "energylabel",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG024",
+      "title": "Stricter chemical limits for toys (phthalates, bisphenols)",
+      "short_name": "ToySafety — Stricter chemical limits for toys (phtha",
+      "regulation_number": "Toy Safety revision",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32009L0048",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-05-09",
+      "effective_date": "2027-09-01",
+      "deadline_date": "2027-09-01",
+      "urgency": "high",
+      "summary": "The revised toy-safety rules tighten limits on phthalates and bisphenols in toys intended for children. Products designed for users 14+ are not 'toys' for this purpose.",
+      "what_changed": "The revised toy-safety rules tighten limits on phthalates and bisphenols in toys intended for children. Products designed for users 14+ are not 'toys' for this purpose.",
+      "affected_product_categories": [
+        "toy_electronic"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "ToySafety"
+      ],
+      "required_actions": [
+        "Re-test toy materials against the tighter chemical limits."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to electronic toys intended for children (not 14+ STEM/maker products).",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "ToySafety",
+      "tags": [
+        "toysafety",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG025",
+      "title": "Sound-level limits for electronic toys",
+      "short_name": "ToySafety — Sound-level limits for electronic toys",
+      "regulation_number": "Toy Safety - acoustics",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32009L0048",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-05-09",
+      "effective_date": "2027-09-01",
+      "deadline_date": "2027-09-01",
+      "urgency": "medium",
+      "summary": "Maximum sound-pressure limits are introduced for sound-emitting electronic toys.",
+      "what_changed": "Maximum sound-pressure limits are introduced for sound-emitting electronic toys.",
+      "affected_product_categories": [
+        "toy_electronic"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "ToySafety"
+      ],
+      "required_actions": [
+        "Measure SPL of sound-emitting toys."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to electronic toys intended for children.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "ToySafety",
+      "tags": [
+        "toysafety",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG026",
+      "title": "MDR guidance: wellness vs. medical wearables",
+      "short_name": "MDR — MDR guidance: wellness vs. medical weara",
+      "regulation_number": "Regulation (EU) 2017/745 guidance (MDCG)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R0745",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-25",
+      "effective_date": "2026-10-01",
+      "deadline_date": "2026-10-01",
+      "urgency": "high",
+      "summary": "New guidance clarifies when a body-worn device has a medical purpose and therefore falls under MDR (CE under MDR, clinical evidence). General fitness/activity trackers without a medical claim remain consumer products under GPSR.",
+      "what_changed": "New guidance clarifies when a body-worn device has a medical purpose and therefore falls under MDR (CE under MDR, clinical evidence). General fitness/activity trackers without a medical claim remain consumer products under GPSR.",
+      "affected_product_categories": [
+        "medical_wearable",
+        "wearable"
+      ],
+      "affected_compliance_streams": [
+        "MDR",
+        "CE"
+      ],
+      "required_actions": [
+        "Classify body-worn devices; route medical-purpose devices to MDR."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to body-worn devices with a medical intended purpose.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "MDR",
+      "tags": [
+        "mdr",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG027",
+      "title": "POPs: lower limit for decaBDE flame retardant",
+      "short_name": "POPs — POPs: lower limit for decaBDE flame reta",
+      "regulation_number": "Regulation (EU) 2019/1021, decaBDE",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019R1021",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-02-14",
+      "effective_date": "2027-06-01",
+      "deadline_date": "2027-06-01",
+      "urgency": "medium",
+      "summary": "The unintentional-trace concentration limit for decaBDE is lowered, affecting plastic housings and boards that still use it.",
+      "what_changed": "The unintentional-trace concentration limit for decaBDE is lowered, affecting plastic housings and boards that still use it.",
+      "affected_product_categories": [
+        "iot_module",
+        "appliance",
+        "networking"
+      ],
+      "affected_compliance_streams": [
+        "POPs",
+        "RoHS"
+      ],
+      "required_actions": [
+        "Screen housings/boards for decaBDE; switch flame-retardant systems."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to equipment containing decaBDE.",
+      "scope_substances": [
+        "decaBDE"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "POPs",
+      "tags": [
+        "pops",
+        "decabde",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG028",
+      "title": "New Machinery Regulation safety requirements",
+      "short_name": "Machinery — New Machinery Regulation safety requirem",
+      "regulation_number": "Regulation (EU) 2023/1230",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1230",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-21",
+      "effective_date": "2027-01-20",
+      "deadline_date": "2027-01-20",
+      "urgency": "medium",
+      "summary": "The new Machinery Regulation introduces requirements for products with moving parts and embedded software/AI, including consumer 3D printers and drones.",
+      "what_changed": "The new Machinery Regulation introduces requirements for products with moving parts and embedded software/AI, including consumer 3D printers and drones.",
+      "affected_product_categories": [
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "Machinery"
+      ],
+      "required_actions": [
+        "Re-assess machinery risk and documentation for in-scope products."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to machinery such as 3D printers and drones on the EU market.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "Machinery",
+      "tags": [
+        "machinery",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG029",
+      "title": "RoHS cadmium exemption review for photovoltaic equipment",
+      "short_name": "RoHS — RoHS cadmium exemption review for photov",
+      "regulation_number": "Annex III exemption (PV)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0065",
+      "category": "chemical_compliance",
+      "status": "active",
+      "published_date": "2026-03-12",
+      "effective_date": "2027-12-31",
+      "deadline_date": "2027-12-31",
+      "urgency": "low",
+      "summary": "The exemption allowing cadmium in certain photovoltaic devices is under review; PV inverter makers should track the outcome.",
+      "what_changed": "The exemption allowing cadmium in certain photovoltaic devices is under review; PV inverter makers should track the outcome.",
+      "affected_product_categories": [
+        "pv_inverter"
+      ],
+      "affected_compliance_streams": [
+        "RoHS"
+      ],
+      "required_actions": [
+        "Confirm cadmium content of PV equipment; monitor exemption status."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to photovoltaic equipment containing cadmium.",
+      "scope_substances": [
+        "cadmium"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RoHS",
+      "tags": [
+        "rohs",
+        "cadmium",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG030",
+      "title": "REACH restriction on lead stabilisers in PVC articles",
+      "short_name": "REACH — REACH restriction on lead stabilisers in",
+      "regulation_number": "Annex XVII restriction (lead in PVC)",
+      "source_url": "https://echa.europa.eu/candidate-list-table",
+      "category": "chemical_compliance",
+      "status": "new_update",
+      "published_date": "2026-03-26",
+      "effective_date": "2027-05-01",
+      "deadline_date": "2027-05-01",
+      "urgency": "medium",
+      "summary": "Lead compounds used as stabilisers in PVC (including cable sheathing) are restricted above trace levels.",
+      "what_changed": "Lead compounds used as stabilisers in PVC (including cable sheathing) are restricted above trace levels.",
+      "affected_product_categories": [
+        "cable"
+      ],
+      "affected_compliance_streams": [
+        "REACH",
+        "SCIP"
+      ],
+      "required_actions": [
+        "Switch PVC cable compounds to lead-free stabilisers."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to cables/articles with lead-stabilised PVC.",
+      "scope_substances": [
+        "lead"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "REACH",
+      "tags": [
+        "reach",
+        "lead",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG031",
+      "title": "Battery labelling: capacity, CE and QR for portable batteries",
+      "short_name": "Battery — Battery labelling: capacity, CE and QR f",
+      "regulation_number": "Regulation (EU) 2023/1542, Art. 13 (labelling)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1542",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-08",
+      "effective_date": "2027-08-18",
+      "deadline_date": "2027-08-18",
+      "urgency": "medium",
+      "summary": "Batteries and battery-powered products must carry capacity, separate-collection and CE marking plus a QR code linking to battery information.",
+      "what_changed": "Batteries and battery-powered products must carry capacity, separate-collection and CE marking plus a QR code linking to battery information.",
+      "affected_product_categories": [
+        "battery_pack",
+        "audio",
+        "wearable",
+        "drone",
+        "smart_home",
+        "emobility_battery"
+      ],
+      "affected_compliance_streams": [
+        "Battery",
+        "CE"
+      ],
+      "required_actions": [
+        "Add compliant battery labelling and QR codes."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to products containing any battery.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "Battery",
+      "tags": [
+        "battery",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG032",
+      "title": "GPSR: online-marketplace and distance-sales obligations",
+      "short_name": "GPSR — GPSR: online-marketplace and distance-sa",
+      "regulation_number": "Regulation (EU) 2023/988, online sales",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R0988",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-04-16",
+      "effective_date": "2026-12-13",
+      "deadline_date": "2026-12-13",
+      "urgency": "medium",
+      "summary": "Additional information and recall-handling duties apply to consumer products sold online into the EU.",
+      "what_changed": "Additional information and recall-handling duties apply to consumer products sold online into the EU.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "GPSR"
+      ],
+      "required_actions": [
+        "Update online product listings with required safety information."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to consumer products (excludes medical and industrial-only).",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "GPSR",
+      "tags": [
+        "gpsr",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG033",
+      "title": "France: repairability/durability index for displays, appliances and networking gear",
+      "short_name": "WEEE — France: repairability/durability index f",
+      "regulation_number": "France AGEC repairability index",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32012L0019",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-03-30",
+      "effective_date": "2026-09-15",
+      "deadline_date": "2026-09-15",
+      "urgency": "medium",
+      "summary": "Products sold in France in the covered categories must display a repairability (moving to durability) index score at the point of sale.",
+      "what_changed": "Products sold in France in the covered categories must display a repairability (moving to durability) index score at the point of sale.",
+      "affected_product_categories": [
+        "display",
+        "appliance",
+        "networking"
+      ],
+      "affected_compliance_streams": [
+        "WEEE"
+      ],
+      "required_actions": [
+        "Calculate and display the French repairability/durability index."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to displays, household appliances and networking equipment sold in France (FR).",
+      "scope_substances": [],
+      "scope_markets": [
+        "FR"
+      ],
+      "regulation_family": "WEEE",
+      "tags": [
+        "weee",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG034",
+      "title": "Battery supply-chain due diligence for industrial/EV producers",
+      "short_name": "Battery — Battery supply-chain due diligence for i",
+      "regulation_number": "Regulation (EU) 2023/1542, Art. 48 (due diligence)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1542",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-04-28",
+      "effective_date": "2027-08-18",
+      "deadline_date": "2027-08-18",
+      "urgency": "low",
+      "summary": "Producers of industrial and EV batteries must operate a raw-materials supply-chain due-diligence policy (cobalt, lithium, nickel, natural graphite).",
+      "what_changed": "Producers of industrial and EV batteries must operate a raw-materials supply-chain due-diligence policy (cobalt, lithium, nickel, natural graphite).",
+      "affected_product_categories": [
+        "battery_pack",
+        "emobility_battery"
+      ],
+      "affected_compliance_streams": [
+        "Battery",
+        "CE"
+      ],
+      "required_actions": [
+        "Establish a battery raw-materials due-diligence policy."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to industrial and EV battery producers.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "Battery",
+      "tags": [
+        "battery",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG035",
+      "title": "Harmonised standard EN 18031 cited for RED cybersecurity",
+      "short_name": "RED — Harmonised standard EN 18031 cited for R",
+      "regulation_number": "EN 18031 citation",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014L0053",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-05-15",
+      "effective_date": "2025-08-01",
+      "deadline_date": "2025-08-01",
+      "urgency": "medium",
+      "summary": "EN 18031-1/-2/-3 are cited in the Official Journal, giving presumption of conformity for the RED cybersecurity requirements on internet-connected radio equipment.",
+      "what_changed": "EN 18031-1/-2/-3 are cited in the Official Journal, giving presumption of conformity for the RED cybersecurity requirements on internet-connected radio equipment.",
+      "affected_product_categories": [
+        "smart_home",
+        "networking",
+        "audio",
+        "wearable",
+        "iot_module",
+        "drone",
+        "medical_wearable"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "RED"
+      ],
+      "required_actions": [
+        "Use EN 18031 to demonstrate RED cybersecurity conformity."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Supports REG-26-015; same scope (internet-connected radio equipment).",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RED",
+      "tags": [
+        "red",
+        "2025"
+      ]
+    },
+    {
+      "id": "REG036",
+      "title": "RoHS Pack 4 phthalate limits reminder (DEHP, DBP, BBP)",
+      "short_name": "RoHS — RoHS Pack 4 phthalate limits reminder (D",
+      "regulation_number": "Annex II, Pack 4 phthalates",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32011L0065",
+      "category": "chemical_compliance",
+      "status": "active",
+      "published_date": "2026-02-11",
+      "effective_date": "2026-07-22",
+      "deadline_date": "2026-07-22",
+      "urgency": "medium",
+      "summary": "Reminder that DEHP, DBP and BBP are restricted in EEE above 0.1%; enforcement focus on soft plastics and cabling.",
+      "what_changed": "Reminder that DEHP, DBP and BBP are restricted in EEE above 0.1%; enforcement focus on soft plastics and cabling.",
+      "affected_product_categories": [
+        "led_lighting",
+        "power_supply",
+        "battery_pack",
+        "audio",
+        "smart_home",
+        "wearable",
+        "medical_wearable",
+        "toy_electronic",
+        "cable",
+        "display",
+        "iot_module",
+        "pv_inverter",
+        "emobility_battery",
+        "networking",
+        "appliance",
+        "printer_3d",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "RoHS"
+      ],
+      "required_actions": [
+        "Confirm phthalate content of soft plastics and cables."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to EEE containing DEHP/DBP/BBP above threshold.",
+      "scope_substances": [
+        "DEHP",
+        "DBP",
+        "BBP"
+      ],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "RoHS",
+      "tags": [
+        "rohs",
+        "dehp",
+        "dbp",
+        "bbp",
+        "2026"
+      ]
+    },
+    {
+      "id": "REG037",
+      "title": "Energy label database update for light sources",
+      "short_name": "EnergyLabel — Energy label database update for light s",
+      "regulation_number": "Regulation (EU) 2019/2015, light sources",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017R1369",
+      "category": "product_compliance",
+      "status": "active",
+      "published_date": "2026-04-12",
+      "effective_date": "2027-02-01",
+      "deadline_date": "2027-02-01",
+      "urgency": "low",
+      "summary": "Light sources must have current EPREL registrations and rescaled labels; lighting placed on the market needs updated documentation.",
+      "what_changed": "Light sources must have current EPREL registrations and rescaled labels; lighting placed on the market needs updated documentation.",
+      "affected_product_categories": [
+        "led_lighting"
+      ],
+      "affected_compliance_streams": [
+        "EnergyLabel"
+      ],
+      "required_actions": [
+        "Update EPREL entries and labels for LED lighting."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to LED lighting / light sources.",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "EnergyLabel",
+      "tags": [
+        "energylabel",
+        "2027"
+      ]
+    },
+    {
+      "id": "REG038",
+      "title": "GPSR: recall and update obligations for products with embedded software",
+      "short_name": "GPSR — GPSR: recall and update obligations for",
+      "regulation_number": "Regulation (EU) 2023/988, connected products",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R0988",
+      "category": "product_compliance",
+      "status": "new_update",
+      "published_date": "2026-05-20",
+      "effective_date": "2027-01-01",
+      "deadline_date": "2027-01-01",
+      "urgency": "medium",
+      "summary": "Connected consumer products with embedded software must support security updates and a clear recall pathway.",
+      "what_changed": "Connected consumer products with embedded software must support security updates and a clear recall pathway.",
+      "affected_product_categories": [
+        "smart_home",
+        "networking",
+        "audio",
+        "wearable",
+        "drone"
+      ],
+      "affected_compliance_streams": [
+        "CE",
+        "GPSR"
+      ],
+      "required_actions": [
+        "Document software-update and recall procedures for connected products."
+      ],
+      "fines": "National penalties apply; market access restrictions for non-compliance",
+      "scope_conditions": "Applies to internet-connected consumer products (excludes medical/industrial-only).",
+      "scope_substances": [],
+      "scope_markets": [
+        "EU"
+      ],
+      "regulation_family": "GPSR",
+      "tags": [
+        "gpsr",
+        "2027"
+      ]
+    }
+  ]
+}

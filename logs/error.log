@@ -1,0 +1,323 @@
+[2026-06-26 14:57:50 +0200] [1894618] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 14:57:50 +0200] [1894618] [INFO] Listening at: http://0.0.0.0:5000 (1894618)
+[2026-06-26 14:57:50 +0200] [1894618] [INFO] Using worker: sync
+[2026-06-26 14:57:50 +0200] [1894619] [INFO] Booting worker with pid: 1894619
+[2026-06-26 14:57:50 +0200] [1894620] [INFO] Booting worker with pid: 1894620
+[2026-06-26 14:57:50 +0200] [1894618] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 15:05:22 +0200] [1894618] [INFO] Handling signal: term
+[2026-06-26 15:05:22 +0200] [1894619] [INFO] Worker exiting (pid: 1894619)
+[2026-06-26 15:05:22 +0200] [1894620] [INFO] Worker exiting (pid: 1894620)
+[2026-06-26 15:05:22 +0200] [1894618] [INFO] Shutting down: Master
+[2026-06-26 15:05:24 +0200] [1913420] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 15:05:24 +0200] [1913420] [INFO] Listening at: http://0.0.0.0:5000 (1913420)
+[2026-06-26 15:05:24 +0200] [1913420] [INFO] Using worker: sync
+[2026-06-26 15:05:24 +0200] [1913421] [INFO] Booting worker with pid: 1913421
+[2026-06-26 15:05:24 +0200] [1913458] [INFO] Booting worker with pid: 1913458
+[2026-06-26 15:05:24 +0200] [1913420] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 16:21:58 +0200] [1913420] [CRITICAL] WORKER TIMEOUT (pid:1913458)
+[2026-06-26 16:21:58 +0200] [1913458] [ERROR] Error handling request POST /api/findings/run
+Traceback (most recent call last):
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 184, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/routes/findings.py", line 75, in run_findings
+    findings = generate_findings(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/findings.py", line 403, in generate_findings
+    curr_sev  = SEV_NUM.get(best_real["severity"], 2)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/hf_llm.py", line 120, in reason_gap
+    result = _call_hf(prompt, max_tokens=180)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/hf_llm.py", line 67, in _call_hf
+    resp = requests.post(url, headers=headers, json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/adapters.py", line 662, in send
+    conn = self.get_connection_with_tls_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/adapters.py", line 506, in get_connection_with_tls_context
+    conn = self.poolmanager.connection_from_host(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/poolmanager.py", line 317, in connection_from_host
+    return self.connection_from_context(request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/poolmanager.py", line 342, in connection_from_context
+    return self.connection_from_pool_key(pool_key, request_context=request_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/poolmanager.py", line 366, in connection_from_pool_key
+    self.pools[pool_key] = pool
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/_collections.py", line None, in __setitem__
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-06-26 16:21:58 +0200] [1913458] [INFO] Worker exiting (pid: 1913458)
+[2026-06-26 16:21:59 +0200] [1913420] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 16:21:59 +0200] [2099114] [INFO] Booting worker with pid: 2099114
+[2026-06-26 17:26:51 +0200] [1913420] [CRITICAL] WORKER TIMEOUT (pid:1913421)
+[2026-06-26 17:26:52 +0200] [1913420] [ERROR] Worker (pid:1913421) was sent SIGKILL! Perhaps out of memory?
+[2026-06-26 17:26:52 +0200] [2265801] [INFO] Booting worker with pid: 2265801
+[2026-06-26 17:26:52 +0200] [1913420] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 17:28:15 +0200] [2099114] [INFO] Worker exiting (pid: 2099114)
+[2026-06-26 17:28:15 +0200] [2265801] [INFO] Worker exiting (pid: 2265801)
+[2026-06-26 17:28:15 +0200] [1913420] [INFO] Handling signal: term
+[2026-06-26 17:28:15 +0200] [1913420] [INFO] Worker (pid:2099114) was sent SIGTERM!
+[2026-06-26 17:28:15 +0200] [1913420] [INFO] Worker (pid:2265801) was sent SIGTERM!
+[2026-06-26 17:28:16 +0200] [1913420] [INFO] Shutting down: Master
+[2026-06-26 17:28:55 +0200] [2270994] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 17:28:55 +0200] [2270994] [INFO] Listening at: http://0.0.0.0:5000 (2270994)
+[2026-06-26 17:28:55 +0200] [2270994] [INFO] Using worker: sync
+[2026-06-26 17:28:55 +0200] [2270995] [INFO] Booting worker with pid: 2270995
+[2026-06-26 17:28:55 +0200] [2270996] [INFO] Booting worker with pid: 2270996
+[2026-06-26 17:28:55 +0200] [2270994] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 17:32:25 +0200] [2270994] [INFO] Handling signal: term
+[2026-06-26 17:32:25 +0200] [2270995] [INFO] Worker exiting (pid: 2270995)
+[2026-06-26 17:32:25 +0200] [2270996] [INFO] Worker exiting (pid: 2270996)
+[2026-06-26 17:32:26 +0200] [2270994] [INFO] Shutting down: Master
+[2026-06-26 17:32:28 +0200] [2279777] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 17:32:28 +0200] [2279777] [INFO] Listening at: http://0.0.0.0:5000 (2279777)
+[2026-06-26 17:32:28 +0200] [2279777] [INFO] Using worker: sync
+[2026-06-26 17:32:28 +0200] [2279778] [INFO] Booting worker with pid: 2279778
+[2026-06-26 17:32:28 +0200] [2279779] [INFO] Booting worker with pid: 2279779
+[2026-06-26 17:32:28 +0200] [2279777] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 17:34:54 +0200] [2279777] [INFO] Handling signal: term
+[2026-06-26 17:34:54 +0200] [2279778] [INFO] Worker exiting (pid: 2279778)
+[2026-06-26 17:34:54 +0200] [2279779] [INFO] Worker exiting (pid: 2279779)
+[2026-06-26 17:34:54 +0200] [2279777] [INFO] Shutting down: Master
+[2026-06-26 17:34:56 +0200] [2285926] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 17:34:56 +0200] [2285926] [INFO] Listening at: http://0.0.0.0:5000 (2285926)
+[2026-06-26 17:34:56 +0200] [2285926] [INFO] Using worker: sync
+[2026-06-26 17:34:56 +0200] [2285927] [INFO] Booting worker with pid: 2285927
+[2026-06-26 17:34:56 +0200] [2285928] [INFO] Booting worker with pid: 2285928
+[2026-06-26 17:34:57 +0200] [2285926] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 17:36:11 +0200] [2285926] [INFO] Handling signal: term
+[2026-06-26 17:36:11 +0200] [2285927] [INFO] Worker exiting (pid: 2285927)
+[2026-06-26 17:36:11 +0200] [2285928] [INFO] Worker exiting (pid: 2285928)
+[2026-06-26 17:36:11 +0200] [2285926] [INFO] Shutting down: Master
+[2026-06-26 17:36:14 +0200] [2289097] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 17:36:14 +0200] [2289097] [INFO] Listening at: http://0.0.0.0:5000 (2289097)
+[2026-06-26 17:36:14 +0200] [2289097] [INFO] Using worker: sync
+[2026-06-26 17:36:14 +0200] [2289098] [INFO] Booting worker with pid: 2289098
+[2026-06-26 17:36:14 +0200] [2289100] [INFO] Booting worker with pid: 2289100
+[2026-06-26 17:36:14 +0200] [2289097] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 17:53:39 +0200] [2289097] [INFO] Handling signal: term
+[2026-06-26 17:53:39 +0200] [2289098] [INFO] Worker exiting (pid: 2289098)
+[2026-06-26 17:53:39 +0200] [2289100] [INFO] Worker exiting (pid: 2289100)
+[2026-06-26 17:53:39 +0200] [2289097] [INFO] Shutting down: Master
+[2026-06-26 17:53:41 +0200] [2330083] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 17:53:41 +0200] [2330083] [INFO] Listening at: http://0.0.0.0:5000 (2330083)
+[2026-06-26 17:53:41 +0200] [2330083] [INFO] Using worker: sync
+[2026-06-26 17:53:41 +0200] [2330102] [INFO] Booting worker with pid: 2330102
+[2026-06-26 17:53:41 +0200] [2330103] [INFO] Booting worker with pid: 2330103
+[2026-06-26 17:53:41 +0200] [2330083] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 18:00:39 +0200] [2330083] [INFO] Handling signal: term
+[2026-06-26 18:00:39 +0200] [2330102] [INFO] Worker exiting (pid: 2330102)
+[2026-06-26 18:00:39 +0200] [2330103] [INFO] Worker exiting (pid: 2330103)
+[2026-06-26 18:00:39 +0200] [2330083] [INFO] Shutting down: Master
+[2026-06-26 18:00:42 +0200] [2347920] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 18:00:42 +0200] [2347920] [INFO] Listening at: http://0.0.0.0:5000 (2347920)
+[2026-06-26 18:00:42 +0200] [2347920] [INFO] Using worker: sync
+[2026-06-26 18:00:42 +0200] [2347922] [INFO] Booting worker with pid: 2347922
+[2026-06-26 18:00:42 +0200] [2347923] [INFO] Booting worker with pid: 2347923
+[2026-06-26 18:00:42 +0200] [2347920] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 18:01:07 +0200] [2347920] [INFO] Handling signal: term
+[2026-06-26 18:01:07 +0200] [2347922] [INFO] Worker exiting (pid: 2347922)
+[2026-06-26 18:01:07 +0200] [2347923] [INFO] Worker exiting (pid: 2347923)
+[2026-06-26 18:01:07 +0200] [2347920] [INFO] Shutting down: Master
+[2026-06-26 18:01:09 +0200] [2349185] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 18:01:09 +0200] [2349185] [INFO] Listening at: http://0.0.0.0:5000 (2349185)
+[2026-06-26 18:01:09 +0200] [2349185] [INFO] Using worker: sync
+[2026-06-26 18:01:09 +0200] [2349186] [INFO] Booting worker with pid: 2349186
+[2026-06-26 18:01:09 +0200] [2349187] [INFO] Booting worker with pid: 2349187
+[2026-06-26 18:01:09 +0200] [2349185] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 18:01:52 +0200] [2349185] [INFO] Handling signal: term
+[2026-06-26 18:01:52 +0200] [2349186] [INFO] Worker exiting (pid: 2349186)
+[2026-06-26 18:01:52 +0200] [2349187] [INFO] Worker exiting (pid: 2349187)
+[2026-06-26 18:01:52 +0200] [2349185] [INFO] Shutting down: Master
+[2026-06-26 18:01:54 +0200] [2351150] [INFO] Starting gunicorn 26.0.0
+[2026-06-26 18:01:54 +0200] [2351150] [INFO] Listening at: http://0.0.0.0:5000 (2351150)
+[2026-06-26 18:01:54 +0200] [2351150] [INFO] Using worker: sync
+[2026-06-26 18:01:54 +0200] [2351151] [INFO] Booting worker with pid: 2351151
+[2026-06-26 18:01:54 +0200] [2351152] [INFO] Booting worker with pid: 2351152
+[2026-06-26 18:01:54 +0200] [2351150] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl
+[2026-06-26 18:52:02 +0200] [2351150] [CRITICAL] WORKER TIMEOUT (pid:2351151)
+[2026-06-26 18:52:02 +0200] [2351151] [ERROR] Error handling request POST /api/findings/run
+Traceback (most recent call last):
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/anaconda3/envs/py312_env/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/hf_llm.py", line 67, in _call_hf
+    resp = requests.post(url, headers=headers, json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api-inference.huggingface.co', port=443): Max retries exceeded with url: /models/mistralai/Mistral-7B-Instruct-v0.3 (Caused by NameResolutionError("HTTPSConnection(host='api-inference.huggingface.co', port=443): Failed to resolve 'api-inference.huggingface.co' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/anaconda3/envs/py312_env/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 184, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/routes/findings.py", line 101, in run_findings
+    findings = generate_findings(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/findings.py", line 442, in generate_findings
+    llm_reasoning = reason_gap(product, reg, gap_desc, source_url)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/hf_llm.py", line 120, in reason_gap
+    result = _call_hf(prompt, max_tokens=180)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/hf_llm.py", line 98, in _call_hf
+    return _call_hf(prompt, max_tokens, model_idx + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/services/hf_llm.py", line 67, in _call_hf
+    resp = requests.post(url, headers=headers, json=payload, timeout=30)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+                              ^^^^^^^^^
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/urllib3/connection.py", line 169, in host
+    @property
+    
+  File "/home/vivek/Desktop/Bobathon/Project/backend/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-06-26 18:52:02 +0200] [2351151] [INFO] Worker exiting (pid: 2351151)
+[2026-06-26 18:52:02 +0200] [2451237] [INFO] Booting worker with pid: 2451237
+[2026-06-26 18:52:02 +0200] [2351150] [INFO] Control socket listening at /run/user/1001/gunicorn.ctl

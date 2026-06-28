@@ -1,0 +1,434 @@
+[
+  {
+    "company": "CellCore Energy Sp. z o.o.",
+    "partner_id": "P003",
+    "product_id": "P003-B",
+    "product": "IndusCell 2.5kWh Module",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Battery Passport (Industrial)",
+    "requirement": "Industrial batteries with capacity > 2 kWh must carry a digital battery passport before being placed on the EU market.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Industrial battery (>2 kWh) placed on EU market without a digital battery passport.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Set up battery passport (data record + QR code) linked to each battery unit before the Feb 2027 deadline.",
+    "alert": {
+      "channel": "sms",
+      "to": "+48 22 0000303",
+      "message": "[COMPLIANCE ALERT] CellCore Energy Sp. z o.o.: 'IndusCell 2.5kWh Module' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Industrial battery (>2 kWh) placed on EU market without a digital battery passport. Action: Set up battery passport (data record + QR code) linked to each battery unit befo Source\u2026"
+    }
+  },
+  {
+    "company": "SonicWave Audio SARL",
+    "partner_id": "P004",
+    "product_id": "P004-A",
+    "product": "WaveGo Bluetooth Speaker",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "whatsapp",
+      "to": "+33 1 00000404",
+      "message": "[COMPLIANCE ALERT] SonicWave Audio SARL: 'WaveGo Bluetooth Speaker' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: h\u2026"
+    }
+  },
+  {
+    "company": "SonicWave Audio SARL",
+    "partner_id": "P004",
+    "product_id": "P004-B",
+    "product": "StudioPods Headphones",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "whatsapp",
+      "to": "+33 1 00000404",
+      "message": "[COMPLIANCE ALERT] SonicWave Audio SARL: 'StudioPods Headphones' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: http\u2026"
+    }
+  },
+  {
+    "company": "HomePulse Smart GmbH",
+    "partner_id": "P005",
+    "product_id": "P005-A",
+    "product": "MotionSense Sensor",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@homepulse.example.com",
+      "message": "[COMPLIANCE ALERT] HomePulse Smart GmbH: 'MotionSense Sensor' muss EU Battery Regulation (EU) 2023/1542 bis 2027-02-18 erf\u00fcllen. L\u00fccke: Battery embedded in appliance/device may not be independently removable by end-user. Ma\u00dfnahme: Redesign product so the portable battery can be removed without specialist tools. Quelle\u2026"
+    }
+  },
+  {
+    "company": "FitTrack Wearables AB",
+    "partner_id": "P006",
+    "product_id": "P006-A",
+    "product": "PulseBand Activity Tracker",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "sms",
+      "to": "+46 8 00000606",
+      "message": "[COMPLIANCE ALERT] FitTrack Wearables AB: 'PulseBand Activity Tracker' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source\u2026"
+    }
+  },
+  {
+    "company": "FitTrack Wearables AB",
+    "partner_id": "P006",
+    "product_id": "P006-B",
+    "product": "SportWatch GPS",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "sms",
+      "to": "+46 8 00000606",
+      "message": "[COMPLIANCE ALERT] FitTrack Wearables AB: 'SportWatch GPS' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: https://eu\u2026"
+    }
+  },
+  {
+    "company": "MediBand Health AG",
+    "partner_id": "P007",
+    "product_id": "P007-A",
+    "product": "CardioPatch Monitor",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@mediband.example.com",
+      "message": "[COMPLIANCE ALERT] MediBand Health AG: 'CardioPatch Monitor' muss EU Battery Regulation (EU) 2023/1542 bis 2027-02-18 erf\u00fcllen. L\u00fccke: Battery embedded in appliance/device may not be independently removable by end-user. Ma\u00dfnahme: Redesign product so the portable battery can be removed without specialist tools. Quelle:\u2026"
+    }
+  },
+  {
+    "company": "MediBand Health AG",
+    "partner_id": "P007",
+    "product_id": "P007-B",
+    "product": "GlucoSense CGM Patch",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@mediband.example.com",
+      "message": "[COMPLIANCE ALERT] MediBand Health AG: 'GlucoSense CGM Patch' muss EU Battery Regulation (EU) 2023/1542 bis 2027-02-18 erf\u00fcllen. L\u00fccke: Battery embedded in appliance/device may not be independently removable by end-user. Ma\u00dfnahme: Redesign product so the portable battery can be removed without specialist tools. Quelle\u2026"
+    }
+  },
+  {
+    "company": "PlayBright Toys S.r.l.",
+    "partner_id": "P008",
+    "product_id": "P008-B",
+    "product": "SingAlong Karaoke Mic",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@playbright.example.com",
+      "message": "[COMPLIANCE ALERT] PlayBright Toys S.r.l.: 'SingAlong Karaoke Mic' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: ht\u2026"
+    }
+  },
+  {
+    "company": "PlayBright Toys S.r.l.",
+    "partner_id": "P008",
+    "product_id": "P008-C",
+    "product": "JuniorSTEM Robotics Kit",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@playbright.example.com",
+      "message": "[COMPLIANCE ALERT] PlayBright Toys S.r.l.: 'JuniorSTEM Robotics Kit' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: \u2026"
+    }
+  },
+  {
+    "company": "RideVolt Mobility GmbH",
+    "partner_id": "P013",
+    "product_id": "P013-A",
+    "product": "e-Scooter Battery Pack 280Wh",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Battery Passport (LMT)",
+    "requirement": "Light-means-of-transport (LMT) batteries must carry a digital battery passport (QR code / data carrier) before being placed on the EU market.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "LMT battery is placed on EU market without a digital battery passport / QR data carrier.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Create the battery passport (QR code + data record) and attach it to the battery before the deadline. Use the Commission's battery passport framework.",
+    "alert": {
+      "channel": "sms",
+      "to": "+49 711 001313",
+      "message": "[COMPLIANCE ALERT] RideVolt Mobility GmbH: 'e-Scooter Battery Pack 280Wh' muss EU Battery Regulation (EU) 2023/1542 bis 2027-02-18 erf\u00fcllen. L\u00fccke: LMT battery is placed on EU market without a digital battery passport / QR data carrier. Ma\u00dfnahme: Create the battery passport (QR code + data record) and attach it to the\u2026"
+    }
+  },
+  {
+    "company": "RideVolt Mobility GmbH",
+    "partner_id": "P013",
+    "product_id": "P013-B",
+    "product": "eBike Battery 504Wh",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Battery Passport (LMT)",
+    "requirement": "Light-means-of-transport (LMT) batteries must carry a digital battery passport (QR code / data carrier) before being placed on the EU market.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "LMT battery is placed on EU market without a digital battery passport / QR data carrier.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Create the battery passport (QR code + data record) and attach it to the battery before the deadline. Use the Commission's battery passport framework.",
+    "alert": {
+      "channel": "sms",
+      "to": "+49 711 001313",
+      "message": "[COMPLIANCE ALERT] RideVolt Mobility GmbH: 'eBike Battery 504Wh' muss EU Battery Regulation (EU) 2023/1542 bis 2027-02-18 erf\u00fcllen. L\u00fccke: LMT battery is placed on EU market without a digital battery passport / QR data carrier. Ma\u00dfnahme: Create the battery passport (QR code + data record) and attach it to the battery \u2026"
+    }
+  },
+  {
+    "company": "GlowToys Junior Sp. z o.o.",
+    "partner_id": "P019",
+    "product_id": "P019-A",
+    "product": "StarLite Night Toy",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@glowtoys.example.com",
+      "message": "[COMPLIANCE ALERT] GlowToys Junior Sp. z o.o.: 'StarLite Night Toy' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: h\u2026"
+    }
+  },
+  {
+    "company": "GlowToys Junior Sp. z o.o.",
+    "partner_id": "P019",
+    "product_id": "P019-B",
+    "product": "MelodyPlush Toy",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@glowtoys.example.com",
+      "message": "[COMPLIANCE ALERT] GlowToys Junior Sp. z o.o.: 'MelodyPlush Toy' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: http\u2026"
+    }
+  },
+  {
+    "company": "NomadPower Outdoor AB",
+    "partner_id": "P021",
+    "product_id": "P021-B",
+    "product": "BaseCell 2.0kWh Industrial",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Battery Passport (Industrial)",
+    "requirement": "Industrial batteries with capacity > 2 kWh must carry a digital battery passport before being placed on the EU market.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Industrial battery (>2 kWh) placed on EU market without a digital battery passport.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Set up battery passport (data record + QR code) linked to each battery unit before the Feb 2027 deadline.",
+    "alert": {
+      "channel": "sms",
+      "to": "+46 31 002121",
+      "message": "[COMPLIANCE ALERT] NomadPower Outdoor AB: 'BaseCell 2.0kWh Industrial' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Industrial battery (>2 kWh) placed on EU market without a digital battery passport. Action: Set up battery passport (data record + QR code) linked to each battery unit befo Source: \u2026"
+    }
+  },
+  {
+    "company": "KidVision Cams SARL",
+    "partner_id": "P022",
+    "product_id": "P022-A",
+    "product": "LittleView Baby Monitor",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@kidvision.example.com",
+      "message": "[COMPLIANCE ALERT] KidVision Cams SARL: 'LittleView Baby Monitor' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: htt\u2026"
+    }
+  },
+  {
+    "company": "KidVision Cams SARL",
+    "partner_id": "P022",
+    "product_id": "P022-B",
+    "product": "KidCam Watch",
+    "regulation": "EU Battery Regulation (EU) 2023/1542 \u2013 Art. 11 Removability",
+    "requirement": "Portable batteries incorporated in appliances must be removable and replaceable by the end-user without specialist tools by Feb 2027.",
+    "source_url": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+    "gap": "Battery embedded in appliance/device may not be independently removable by end-user.",
+    "deadline": "2027-02-18",
+    "severity": "high",
+    "recommended_action": "Redesign product so the portable battery can be removed without specialist tools. Update technical file and DoC before Feb 2027.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@kidvision.example.com",
+      "message": "[COMPLIANCE ALERT] KidVision Cams SARL: 'KidCam Watch' must meet EU Battery Regulation (EU) 2023/1542 by 2027-02-18. Gap: Battery embedded in appliance/device may not be independently removable by end-user. Action: Redesign product so the portable battery can be removed without specialist tools. Source: https://eur-le\u2026"
+    }
+  },
+  {
+    "company": "LumaNord Lighting GmbH",
+    "partner_id": "P001",
+    "product_id": "P001-B",
+    "product": "FlexGlow RGB Strip 5m",
+    "regulation": "Packaging & Packaging Waste Regulation (EU) 2025/40 \u2013 PPWR",
+    "requirement": "Single-use plastic packaging must be minimised and eventually eliminated. Plastic film over-wrapping of grouped products is restricted under PPWR.",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+    "gap": "Product uses plastic film packaging, which is targeted for restriction under PPWR.",
+    "deadline": "2030-01-01",
+    "severity": "low",
+    "recommended_action": "Switch to recyclable or paper-based packaging alternatives. Document packaging material changes and update environmental declaration.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@lumanord.example.com",
+      "message": "[COMPLIANCE ALERT] LumaNord Lighting GmbH: 'FlexGlow RGB Strip 5m' muss Packaging & Packaging Waste Regulation (EU) 2025/40 bis 2030-01-01 erf\u00fcllen. L\u00fccke: Product uses plastic film packaging, which is targeted for restriction under PPWR. Ma\u00dfnahme: Switch to recyclable or paper-based packaging alternatives. Quelle: ht\u2026"
+    }
+  },
+  {
+    "company": "CellCore Energy Sp. z o.o.",
+    "partner_id": "P003",
+    "product_id": "P003-C",
+    "product": "CoinCell CR2032 10-pack",
+    "regulation": "Packaging & Packaging Waste Regulation (EU) 2025/40 \u2013 PPWR",
+    "requirement": "Single-use plastic packaging must be minimised and eventually eliminated. Plastic film over-wrapping of grouped products is restricted under PPWR.",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+    "gap": "Product uses plastic film packaging, which is targeted for restriction under PPWR.",
+    "deadline": "2030-01-01",
+    "severity": "low",
+    "recommended_action": "Switch to recyclable or paper-based packaging alternatives. Document packaging material changes and update environmental declaration.",
+    "alert": {
+      "channel": "sms",
+      "to": "+48 22 0000303",
+      "message": "[COMPLIANCE ALERT] CellCore Energy Sp. z o.o.: 'CoinCell CR2032 10-pack' must meet Packaging & Packaging Waste Regulation (EU) 2025/40 by 2030-01-01. Gap: Product uses plastic film packaging, which is targeted for restriction under PPWR. Action: Switch to recyclable or paper-based packaging alternatives. Source: https\u2026"
+    }
+  },
+  {
+    "company": "PlayBright Toys S.r.l.",
+    "partner_id": "P008",
+    "product_id": "P008-A",
+    "product": "RoboPup Interactive Toy",
+    "regulation": "Packaging & Packaging Waste Regulation (EU) 2025/40 \u2013 PPWR",
+    "requirement": "Single-use plastic packaging must be minimised and eventually eliminated. Plastic film over-wrapping of grouped products is restricted under PPWR.",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+    "gap": "Product uses plastic film packaging, which is targeted for restriction under PPWR.",
+    "deadline": "2030-01-01",
+    "severity": "low",
+    "recommended_action": "Switch to recyclable or paper-based packaging alternatives. Document packaging material changes and update environmental declaration.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@playbright.example.com",
+      "message": "[COMPLIANCE ALERT] PlayBright Toys S.r.l.: 'RoboPup Interactive Toy' must meet Packaging & Packaging Waste Regulation (EU) 2025/40 by 2030-01-01. Gap: Product uses plastic film packaging, which is targeted for restriction under PPWR. Action: Switch to recyclable or paper-based packaging alternatives. Source: https://e\u2026"
+    }
+  },
+  {
+    "company": "CableMax Connect S.L.",
+    "partner_id": "P009",
+    "product_id": "P009-A",
+    "product": "UltraLink USB-C Cable 2m",
+    "regulation": "Packaging & Packaging Waste Regulation (EU) 2025/40 \u2013 PPWR",
+    "requirement": "Single-use plastic packaging must be minimised and eventually eliminated. Plastic film over-wrapping of grouped products is restricted under PPWR.",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+    "gap": "Product uses plastic film packaging, which is targeted for restriction under PPWR.",
+    "deadline": "2030-01-01",
+    "severity": "low",
+    "recommended_action": "Switch to recyclable or paper-based packaging alternatives. Document packaging material changes and update environmental declaration.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@cablemax.example.com",
+      "message": "[COMPLIANCE ALERT] CableMax Connect S.L.: 'UltraLink USB-C Cable 2m' must meet Packaging & Packaging Waste Regulation (EU) 2025/40 by 2030-01-01. Gap: Product uses plastic film packaging, which is targeted for restriction under PPWR. Action: Switch to recyclable or paper-based packaging alternatives. Source: https://e\u2026"
+    }
+  },
+  {
+    "company": "BrewEasy Appliances S.r.l.",
+    "partner_id": "P015",
+    "product_id": "P015-A",
+    "product": "QuickBoil Kettle 1.7L",
+    "regulation": "Packaging & Packaging Waste Regulation (EU) 2025/40 \u2013 PPWR",
+    "requirement": "Single-use plastic packaging must be minimised and eventually eliminated. Plastic film over-wrapping of grouped products is restricted under PPWR.",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+    "gap": "Product uses plastic film packaging, which is targeted for restriction under PPWR.",
+    "deadline": "2030-01-01",
+    "severity": "low",
+    "recommended_action": "Switch to recyclable or paper-based packaging alternatives. Document packaging material changes and update environmental declaration.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@breweasy.example.com",
+      "message": "[COMPLIANCE ALERT] BrewEasy Appliances S.r.l.: 'QuickBoil Kettle 1.7L' must meet Packaging & Packaging Waste Regulation (EU) 2025/40 by 2030-01-01. Gap: Product uses plastic film packaging, which is targeted for restriction under PPWR. Action: Switch to recyclable or paper-based packaging alternatives. Source: https:/\u2026"
+    }
+  },
+  {
+    "company": "PureAir Devices BV",
+    "partner_id": "P018",
+    "product_id": "P018-A",
+    "product": "FreshFlow Air Purifier",
+    "regulation": "Packaging & Packaging Waste Regulation (EU) 2025/40 \u2013 PPWR",
+    "requirement": "Single-use plastic packaging must be minimised and eventually eliminated. Plastic film over-wrapping of grouped products is restricted under PPWR.",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+    "gap": "Product uses plastic film packaging, which is targeted for restriction under PPWR.",
+    "deadline": "2030-01-01",
+    "severity": "low",
+    "recommended_action": "Switch to recyclable or paper-based packaging alternatives. Document packaging material changes and update environmental declaration.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@pureair.example.com",
+      "message": "[COMPLIANCE ALERT] PureAir Devices BV: 'FreshFlow Air Purifier' must meet Packaging & Packaging Waste Regulation (EU) 2025/40 by 2030-01-01. Gap: Product uses plastic film packaging, which is targeted for restriction under PPWR. Action: Switch to recyclable or paper-based packaging alternatives. Source: https://eur-le\u2026"
+    }
+  },
+  {
+    "company": "PureAir Devices BV",
+    "partner_id": "P018",
+    "product_id": "P018-B",
+    "product": "DryAir Dehumidifier",
+    "regulation": "Packaging & Packaging Waste Regulation (EU) 2025/40 \u2013 PPWR",
+    "requirement": "Single-use plastic packaging must be minimised and eventually eliminated. Plastic film over-wrapping of grouped products is restricted under PPWR.",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+    "gap": "Product uses plastic film packaging, which is targeted for restriction under PPWR.",
+    "deadline": "2030-01-01",
+    "severity": "low",
+    "recommended_action": "Switch to recyclable or paper-based packaging alternatives. Document packaging material changes and update environmental declaration.",
+    "alert": {
+      "channel": "email",
+      "to": "alerts@pureair.example.com",
+      "message": "[COMPLIANCE ALERT] PureAir Devices BV: 'DryAir Dehumidifier' must meet Packaging & Packaging Waste Regulation (EU) 2025/40 by 2030-01-01. Gap: Product uses plastic film packaging, which is targeted for restriction under PPWR. Action: Switch to recyclable or paper-based packaging alternatives. Source: https://eur-lex.e\u2026"
+    }
+  }
+]

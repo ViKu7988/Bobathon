@@ -1,0 +1,2096 @@
+{
+  "portfolio_version": "2.0",
+  "generated": "2026-06-26",
+  "description": "Real EcoComply partner portfolio — 22 SMEs, 53 products — IBM Bobathon 2025",
+  "partners": [
+    {
+      "id": "P001",
+      "company_name": "LumaNord Lighting GmbH",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@lumanord.example.com",
+      "phone": "+49 7131 000101",
+      "whatsapp": "+49 7131 000101",
+      "country": "Germany",
+      "sector": "Lighting",
+      "product_categories": [
+        "led_lighting"
+      ],
+      "substances": [
+        "lead",
+        "DEHP"
+      ],
+      "certifications": [
+        "EMC",
+        "EnergyLabel",
+        "LVD",
+        "REACH",
+        "RED",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 3200000,
+      "employees": 28,
+      "description": "LumaNord Lighting GmbH manufactures NordBeam LED Panel 600, FlexGlow RGB Strip 5m and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P001-A",
+          "name": "NordBeam LED Panel 600",
+          "category": "led_lighting",
+          "substances": [
+            "lead"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE",
+            "EMC",
+            "LVD",
+            "EnergyLabel"
+          ]
+        },
+        {
+          "product_id": "P001-B",
+          "name": "FlexGlow RGB Strip 5m",
+          "category": "led_lighting",
+          "substances": [
+            "lead",
+            "DEHP"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "barrel",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "REACH",
+            "WEEE",
+            "EMC",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P001-C",
+          "name": "SmartGlow Wi-Fi Bulb",
+          "category": "led_lighting",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "EnergyLabel"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P002",
+      "company_name": "VoltEdge Power BV",
+      "contact_name": "Regulatory Affairs",
+      "email": "alerts@voltedge.example.com",
+      "phone": "+31 20 0000202",
+      "whatsapp": "+31 20 0000202",
+      "country": "Netherlands",
+      "sector": "Power Electronics",
+      "product_categories": [
+        "power_supply"
+      ],
+      "substances": [],
+      "certifications": [
+        "EMC",
+        "ESPR",
+        "EnergyLabel",
+        "LVD",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 4100000,
+      "employees": 35,
+      "description": "VoltEdge Power BV manufactures GaN USB-C Charger 65W, DeskDock USB-C Multiport and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P002-A",
+          "name": "GaN USB-C Charger 65W",
+          "category": "power_supply",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "LVD",
+            "EMC",
+            "ESPR",
+            "EnergyLabel"
+          ]
+        },
+        {
+          "product_id": "P002-B",
+          "name": "DeskDock USB-C Multiport",
+          "category": "power_supply",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "LVD",
+            "EMC",
+            "ESPR"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P003",
+      "company_name": "CellCore Energy Sp. z o.o.",
+      "contact_name": "Product Safety",
+      "email": "alerts@cellcore.example.com",
+      "phone": "+48 22 0000303",
+      "whatsapp": "+48 22 0000303",
+      "country": "Poland",
+      "sector": "Energy Storage",
+      "product_categories": [
+        "battery_pack"
+      ],
+      "substances": [],
+      "certifications": [
+        "Battery",
+        "GPSR",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 2900000,
+      "employees": 24,
+      "description": "CellCore Energy Sp. z o.o. manufactures PowerBank 20k Portable, IndusCell 2.5kWh Module and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P003-A",
+          "name": "PowerBank 20k Portable",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 74,
+          "battery_type": "portable",
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P003-B",
+          "name": "IndusCell 2.5kWh Module",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 2500,
+          "battery_type": "industrial",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P003-C",
+          "name": "CoinCell CR2032 10-pack",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "lithium-primary",
+          "battery_capacity_wh": 0.5,
+          "battery_type": "button_cell",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "GPSR"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "sms"
+    },
+    {
+      "id": "P004",
+      "company_name": "SonicWave Audio SARL",
+      "contact_name": "Quality & Compliance",
+      "email": "alerts@sonicwave.example.com",
+      "phone": "+33 1 00000404",
+      "whatsapp": "+33 1 00000404",
+      "country": "France",
+      "sector": "Consumer Electronics",
+      "product_categories": [
+        "audio"
+      ],
+      "substances": [
+        "BPA"
+      ],
+      "certifications": [
+        "Battery",
+        "EMC",
+        "REACH",
+        "RED",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 3700000,
+      "employees": 31,
+      "description": "SonicWave Audio SARL manufactures WaveGo Bluetooth Speaker, StudioPods Headphones and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P004-A",
+          "name": "WaveGo Bluetooth Speaker",
+          "category": "audio",
+          "substances": [
+            "BPA"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 12,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "REACH",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P004-B",
+          "name": "StudioPods Headphones",
+          "category": "audio",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-po",
+          "battery_capacity_wh": 1.5,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P004-C",
+          "name": "WaveHome Soundbar",
+          "category": "audio",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "EMC"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "whatsapp"
+    },
+    {
+      "id": "P005",
+      "company_name": "HomePulse Smart GmbH",
+      "contact_name": "Compliance",
+      "email": "alerts@homepulse.example.com",
+      "phone": "+49 30 000505",
+      "whatsapp": "+49 30 000505",
+      "country": "Germany",
+      "sector": "Smart Home",
+      "product_categories": [
+        "smart_home"
+      ],
+      "substances": [],
+      "certifications": [
+        "LVD",
+        "RED",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 5100000,
+      "employees": 43,
+      "description": "HomePulse Smart GmbH manufactures MotionSense Sensor, HomeHub Controller and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P005-A",
+          "name": "MotionSense Sensor",
+          "category": "smart_home",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "button_cell",
+          "battery_capacity_wh": 0.6,
+          "battery_type": "button_cell",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P005-B",
+          "name": "HomeHub Controller",
+          "category": "smart_home",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "micro_usb",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P005-C",
+          "name": "PlugSense Smart Plug",
+          "category": "smart_home",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "LVD"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P006",
+      "company_name": "FitTrack Wearables AB",
+      "contact_name": "Regulatory",
+      "email": "alerts@fittrack.example.com",
+      "phone": "+46 8 00000606",
+      "whatsapp": "+46 8 00000606",
+      "country": "Sweden",
+      "sector": "Wearables",
+      "product_categories": [
+        "wearable"
+      ],
+      "substances": [
+        "PFAS_PFHxA"
+      ],
+      "certifications": [
+        "Battery",
+        "REACH",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 2400000,
+      "employees": 19,
+      "description": "FitTrack Wearables AB manufactures PulseBand Activity Tracker, SportWatch GPS and similar products for the EU market. Known compliance gaps: PulseBand wrist strap uses a PFAS/PFHxA water-repellent coating now restricted under REACH",
+      "products": [
+        {
+          "product_id": "P006-A",
+          "name": "PulseBand Activity Tracker",
+          "category": "wearable",
+          "substances": [
+            "PFAS_PFHxA"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "li-po",
+          "battery_capacity_wh": 1.1,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "REACH",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P006-B",
+          "name": "SportWatch GPS",
+          "category": "wearable",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-po",
+          "battery_capacity_wh": 2.2,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "sms"
+    },
+    {
+      "id": "P007",
+      "company_name": "MediBand Health AG",
+      "contact_name": "Regulatory Affairs (Medical)",
+      "email": "alerts@mediband.example.com",
+      "phone": "+41 44 0000707",
+      "whatsapp": "+41 44 0000707",
+      "country": "Switzerland",
+      "sector": "Medical Devices",
+      "product_categories": [
+        "medical_wearable"
+      ],
+      "substances": [
+        "lead"
+      ],
+      "certifications": [
+        "MDR",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 6800000,
+      "employees": 57,
+      "description": "MediBand Health AG manufactures CardioPatch Monitor, GlucoSense CGM Patch and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P007-A",
+          "name": "CardioPatch Monitor",
+          "category": "medical_wearable",
+          "substances": [
+            "lead"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "li-po",
+          "battery_capacity_wh": 2.0,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "medical",
+          "markets": [
+            "EU",
+            "CH"
+          ],
+          "compliance_streams": [
+            "MDR",
+            "RED",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P007-B",
+          "name": "GlucoSense CGM Patch",
+          "category": "medical_wearable",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "button_cell",
+          "battery_capacity_wh": 0.4,
+          "battery_type": "button_cell",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "medical",
+          "markets": [
+            "EU",
+            "CH"
+          ],
+          "compliance_streams": [
+            "MDR",
+            "RED",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU",
+        "CH"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P008",
+      "company_name": "PlayBright Toys S.r.l.",
+      "contact_name": "Product Compliance",
+      "email": "alerts@playbright.example.com",
+      "phone": "+39 02 0000808",
+      "whatsapp": "+39 02 0000808",
+      "country": "Italy",
+      "sector": "Toy / Electronics",
+      "product_categories": [
+        "toy_electronic"
+      ],
+      "substances": [
+        "DEHP"
+      ],
+      "certifications": [
+        "Battery",
+        "GPSR",
+        "REACH",
+        "RoHS",
+        "ToySafety"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 1800000,
+      "employees": 14,
+      "description": "PlayBright Toys S.r.l. manufactures RoboPup Interactive Toy, SingAlong Karaoke Mic and similar products for the EU market. Known compliance gaps: RoboPup soft plastic contains DEHP above the tightened toy chemical limit",
+      "products": [
+        {
+          "product_id": "P008-A",
+          "name": "RoboPup Interactive Toy",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "REACH",
+            "RoHS",
+            "GPSR"
+          ]
+        },
+        {
+          "product_id": "P008-B",
+          "name": "SingAlong Karaoke Mic",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "button_cell",
+          "battery_capacity_wh": 0.3,
+          "battery_type": "button_cell",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "GPSR",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P008-C",
+          "name": "JuniorSTEM Robotics Kit",
+          "category": "toy_electronic",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 9,
+          "battery_type": "portable",
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "GPSR",
+            "Battery",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P009",
+      "company_name": "CableMax Connect S.L.",
+      "contact_name": "Compliance",
+      "email": "alerts@cablemax.example.com",
+      "phone": "+34 91 0000909",
+      "whatsapp": "+34 91 0000909",
+      "country": "Spain",
+      "sector": "Cables & Connectors",
+      "product_categories": [
+        "cable"
+      ],
+      "substances": [
+        "DEHP",
+        "MCCP",
+        "lead"
+      ],
+      "certifications": [
+        "REACH",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 2200000,
+      "employees": 18,
+      "description": "CableMax Connect S.L. manufactures UltraLink USB-C Cable 2m, HDMI 2.1 Cable 3m and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P009-A",
+          "name": "UltraLink USB-C Cable 2m",
+          "category": "cable",
+          "substances": [
+            "DEHP",
+            "MCCP",
+            "lead"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "ES",
+            "FR",
+            "IT"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "REACH"
+          ]
+        },
+        {
+          "product_id": "P009-B",
+          "name": "HDMI 2.1 Cable 3m",
+          "category": "cable",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "ES",
+            "FR",
+            "IT"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "REACH"
+          ]
+        }
+      ],
+      "sells_in": [
+        "ES",
+        "FR",
+        "IT"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P010",
+      "company_name": "DisplayOne Visuals GmbH",
+      "contact_name": "Regulatory",
+      "email": "alerts@displayone.example.com",
+      "phone": "+49 89 001010",
+      "whatsapp": "+49 89 001010",
+      "country": "Germany",
+      "sector": "Displays",
+      "product_categories": [
+        "display"
+      ],
+      "substances": [
+        "mercury"
+      ],
+      "certifications": [
+        "EMC",
+        "ESPR",
+        "EnergyLabel",
+        "LVD",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 4500000,
+      "employees": 38,
+      "description": "DisplayOne Visuals GmbH manufactures UltraView 27 Monitor, Legacy CCFL Panel (spare) and similar products for the EU market. Known compliance gaps: Legacy CCFL spare panel still contains mercury (RoHS restricted substance)",
+      "products": [
+        {
+          "product_id": "P010-A",
+          "name": "UltraView 27 Monitor",
+          "category": "display",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "WEEE",
+            "EnergyLabel",
+            "ESPR",
+            "EMC",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P010-B",
+          "name": "Legacy CCFL Panel (spare)",
+          "category": "display",
+          "substances": [
+            "mercury"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P010-C",
+          "name": "TouchPanel 15 Industrial",
+          "category": "display",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "WEEE",
+            "EMC",
+            "LVD",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P011",
+      "company_name": "GridSense IoT BV",
+      "contact_name": "Compliance",
+      "email": "alerts@gridsense.example.com",
+      "phone": "+31 10 001111",
+      "whatsapp": "+31 10 001111",
+      "country": "Netherlands",
+      "sector": "Industrial IoT",
+      "product_categories": [
+        "iot_module"
+      ],
+      "substances": [
+        "TBBPA",
+        "decaBDE"
+      ],
+      "certifications": [
+        "EMC",
+        "POPs",
+        "REACH",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 7200000,
+      "employees": 61,
+      "description": "GridSense IoT BV manufactures EdgeNode Industrial Module, EdgeGateway 5G and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P011-A",
+          "name": "EdgeNode Industrial Module",
+          "category": "iot_module",
+          "substances": [
+            "TBBPA",
+            "decaBDE"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU",
+            "UK"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "POPs",
+            "RoHS",
+            "EMC"
+          ]
+        },
+        {
+          "product_id": "P011-B",
+          "name": "EdgeGateway 5G",
+          "category": "iot_module",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU",
+            "UK"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "RoHS",
+            "EMC"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU",
+        "UK"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P012",
+      "company_name": "SolarMicro Tech S.L.",
+      "contact_name": "Compliance",
+      "email": "alerts@solarmicro.example.com",
+      "phone": "+34 93 001212",
+      "whatsapp": "+34 93 001212",
+      "country": "Spain",
+      "sector": "Renewable Energy",
+      "product_categories": [
+        "pv_inverter"
+      ],
+      "substances": [
+        "cadmium"
+      ],
+      "certifications": [
+        "EMC",
+        "LVD",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 3300000,
+      "employees": 27,
+      "description": "SolarMicro Tech S.L. manufactures SunLink Micro-Inverter, HybridInverter Pro (Cd-free) and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P012-A",
+          "name": "SunLink Micro-Inverter",
+          "category": "pv_inverter",
+          "substances": [
+            "cadmium"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE",
+            "LVD",
+            "EMC"
+          ]
+        },
+        {
+          "product_id": "P012-B",
+          "name": "HybridInverter Pro (Cd-free)",
+          "category": "pv_inverter",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE",
+            "LVD",
+            "EMC"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P013",
+      "company_name": "RideVolt Mobility GmbH",
+      "contact_name": "Battery Compliance",
+      "email": "alerts@ridevolt.example.com",
+      "phone": "+49 711 001313",
+      "whatsapp": "+49 711 001313",
+      "country": "Germany",
+      "sector": "E-Mobility",
+      "product_categories": [
+        "emobility_battery"
+      ],
+      "substances": [],
+      "certifications": [
+        "Battery",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 5600000,
+      "employees": 47,
+      "description": "RideVolt Mobility GmbH manufactures e-Scooter Battery Pack 280Wh, eBike Battery 504Wh and similar products for the EU market. Known compliance gaps: e-Scooter LMT battery ships without an EU battery passport / data carrier",
+      "products": [
+        {
+          "product_id": "P013-A",
+          "name": "e-Scooter Battery Pack 280Wh",
+          "category": "emobility_battery",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 280,
+          "battery_type": "lmt",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P013-B",
+          "name": "eBike Battery 504Wh",
+          "category": "emobility_battery",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 504,
+          "battery_type": "lmt",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "sms"
+    },
+    {
+      "id": "P014",
+      "company_name": "NetLink Systems Sp. z o.o.",
+      "contact_name": "Regulatory",
+      "email": "alerts@netlink.example.com",
+      "phone": "+48 12 001414",
+      "whatsapp": "+48 12 001414",
+      "country": "Poland",
+      "sector": "Networking",
+      "product_categories": [
+        "networking"
+      ],
+      "substances": [
+        "TBBPA"
+      ],
+      "certifications": [
+        "EMC",
+        "ESPR",
+        "LVD",
+        "REACH",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 6100000,
+      "employees": 52,
+      "description": "NetLink Systems Sp. z o.o. manufactures AirLink Wi-Fi 6 Router, MeshPoint Mini and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P014-A",
+          "name": "AirLink Wi-Fi 6 Router",
+          "category": "networking",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "barrel",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "ESPR",
+            "RoHS",
+            "EMC",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P014-B",
+          "name": "MeshPoint Mini",
+          "category": "networking",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "RoHS",
+            "EMC"
+          ]
+        },
+        {
+          "product_id": "P014-C",
+          "name": "AirLink Router UK Edition",
+          "category": "networking",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "barrel",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "UK"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P015",
+      "company_name": "BrewEasy Appliances S.r.l.",
+      "contact_name": "Compliance",
+      "email": "alerts@breweasy.example.com",
+      "phone": "+39 06 001515",
+      "whatsapp": "+39 06 001515",
+      "country": "Italy",
+      "sector": "Home Appliances",
+      "product_categories": [
+        "appliance"
+      ],
+      "substances": [],
+      "certifications": [
+        "EMC",
+        "LVD",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 2100000,
+      "employees": 17,
+      "description": "BrewEasy Appliances S.r.l. manufactures QuickBoil Kettle 1.7L, ToastMaster 2-Slice and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P015-A",
+          "name": "QuickBoil Kettle 1.7L",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "IT",
+            "DE",
+            "AT"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE",
+            "PPWR"
+          ]
+        },
+        {
+          "product_id": "P015-B",
+          "name": "ToastMaster 2-Slice",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "IT",
+            "DE",
+            "AT"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE"
+          ]
+        }
+      ],
+      "sells_in": [
+        "IT",
+        "DE",
+        "AT"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P016",
+      "company_name": "ChromaPrint 3D GmbH",
+      "contact_name": "Compliance",
+      "email": "alerts@chromaprint.example.com",
+      "phone": "+49 351 001616",
+      "whatsapp": "+49 351 001616",
+      "country": "Germany",
+      "sector": "3D Printing",
+      "product_categories": [
+        "printer_3d"
+      ],
+      "substances": [
+        "lead"
+      ],
+      "certifications": [
+        "EMC",
+        "LVD",
+        "Machinery",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 4800000,
+      "employees": 41,
+      "description": "ChromaPrint 3D GmbH manufactures ChromaPrint X1 (EU), ChromaPrint X1 US Edition and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P016-A",
+          "name": "ChromaPrint X1 (EU)",
+          "category": "printer_3d",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU",
+            "US"
+          ],
+          "compliance_streams": [
+            "Machinery",
+            "LVD",
+            "EMC",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P016-B",
+          "name": "ChromaPrint X1 US Edition",
+          "category": "printer_3d",
+          "substances": [
+            "lead"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "US"
+          ],
+          "compliance_streams": [
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P016-C",
+          "name": "ResinPrint Mini (EU)",
+          "category": "printer_3d",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU",
+            "US"
+          ],
+          "compliance_streams": [
+            "Machinery",
+            "LVD",
+            "EMC",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU",
+        "US"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P017",
+      "company_name": "AeroSense Drones SARL",
+      "contact_name": "Regulatory",
+      "email": "alerts@aerosense.example.com",
+      "phone": "+33 4 00001717",
+      "whatsapp": "+33 4 00001717",
+      "country": "France",
+      "sector": "Drones / UAV",
+      "product_categories": [
+        "drone"
+      ],
+      "substances": [
+        "PFAS_PFHxA"
+      ],
+      "certifications": [
+        "Battery",
+        "GPSR",
+        "Machinery",
+        "REACH",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 3600000,
+      "employees": 30,
+      "description": "AeroSense Drones SARL manufactures SkyScout Camera Drone, MicroDrone Mini and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P017-A",
+          "name": "SkyScout Camera Drone",
+          "category": "drone",
+          "substances": [
+            "PFAS_PFHxA"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "li-po",
+          "battery_capacity_wh": 38,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "REACH",
+            "Machinery",
+            "GPSR"
+          ]
+        },
+        {
+          "product_id": "P017-B",
+          "name": "MicroDrone Mini",
+          "category": "drone",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-po",
+          "battery_capacity_wh": 5,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "GPSR",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "whatsapp"
+    },
+    {
+      "id": "P018",
+      "company_name": "PureAir Devices BV",
+      "contact_name": "Compliance",
+      "email": "alerts@pureair.example.com",
+      "phone": "+31 70 001818",
+      "whatsapp": "+31 70 001818",
+      "country": "Netherlands",
+      "sector": "Home Appliances",
+      "product_categories": [
+        "appliance"
+      ],
+      "substances": [],
+      "certifications": [
+        "EMC",
+        "LVD",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 2700000,
+      "employees": 22,
+      "description": "PureAir Devices BV manufactures FreshFlow Air Purifier, DryAir Dehumidifier and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P018-A",
+          "name": "FreshFlow Air Purifier",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard",
+            "plastic_film"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE",
+            "PPWR"
+          ]
+        },
+        {
+          "product_id": "P018-B",
+          "name": "DryAir Dehumidifier",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE",
+            "PPWR"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P019",
+      "company_name": "GlowToys Junior Sp. z o.o.",
+      "contact_name": "Product Safety",
+      "email": "alerts@glowtoys.example.com",
+      "phone": "+48 61 001919",
+      "whatsapp": "+48 61 001919",
+      "country": "Poland",
+      "sector": "Toy / Electronics",
+      "product_categories": [
+        "toy_electronic"
+      ],
+      "substances": [
+        "DEHP",
+        "lead"
+      ],
+      "certifications": [
+        "GPSR",
+        "REACH",
+        "RoHS",
+        "ToySafety"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 1600000,
+      "employees": 12,
+      "description": "GlowToys Junior Sp. z o.o. manufactures StarLite Night Toy, MelodyPlush Toy and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P019-A",
+          "name": "StarLite Night Toy",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP",
+            "lead"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "button_cell",
+          "battery_capacity_wh": 0.2,
+          "battery_type": "button_cell",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "GPSR",
+            "REACH",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P019-B",
+          "name": "MelodyPlush Toy",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "button_cell",
+          "battery_capacity_wh": 0.2,
+          "battery_type": "button_cell",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "GPSR",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P020",
+      "company_name": "ThermoControl Industrie GmbH",
+      "contact_name": "Compliance",
+      "email": "alerts@thermocontrol.example.com",
+      "phone": "+49 621 002020",
+      "whatsapp": "+49 621 002020",
+      "country": "Germany",
+      "sector": "Home Appliances",
+      "product_categories": [
+        "appliance",
+        "iot_module"
+      ],
+      "substances": [
+        "decaBDE"
+      ],
+      "certifications": [
+        "EMC",
+        "LVD",
+        "POPs",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 8900000,
+      "employees": 74,
+      "description": "ThermoControl Industrie GmbH manufactures IndusTherm Controller, FlowMeter Industrial and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P020-A",
+          "name": "IndusTherm Controller",
+          "category": "appliance",
+          "substances": [
+            "decaBDE"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "RoHS",
+            "POPs"
+          ]
+        },
+        {
+          "product_id": "P020-B",
+          "name": "FlowMeter Industrial",
+          "category": "iot_module",
+          "substances": [
+            "decaBDE"
+          ],
+          "has_battery": false,
+          "battery_chemistry": null,
+          "battery_capacity_wh": 0,
+          "battery_type": "none",
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "POPs",
+            "EMC"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    },
+    {
+      "id": "P021",
+      "company_name": "NomadPower Outdoor AB",
+      "contact_name": "Battery Compliance",
+      "email": "alerts@nomadpower.example.com",
+      "phone": "+46 31 002121",
+      "whatsapp": "+46 31 002121",
+      "country": "Sweden",
+      "sector": "Energy Storage",
+      "product_categories": [
+        "battery_pack"
+      ],
+      "substances": [],
+      "certifications": [
+        "Battery",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 4300000,
+      "employees": 36,
+      "description": "NomadPower Outdoor AB manufactures TrailCell 512 Power Station, BaseCell 2.0kWh Industrial and similar products for the EU market.",
+      "products": [
+        {
+          "product_id": "P021-A",
+          "name": "TrailCell 512 Power Station",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 512,
+          "battery_type": "portable",
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P021-B",
+          "name": "BaseCell 2.0kWh Industrial",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 2048,
+          "battery_type": "industrial",
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P021-C",
+          "name": "PocketCell 99Wh",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 99,
+          "battery_type": "portable",
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "sms"
+    },
+    {
+      "id": "P022",
+      "company_name": "KidVision Cams SARL",
+      "contact_name": "Compliance",
+      "email": "alerts@kidvision.example.com",
+      "phone": "+33 5 00002222",
+      "whatsapp": "+33 5 00002222",
+      "country": "France",
+      "sector": "Smart Home",
+      "product_categories": [
+        "smart_home",
+        "wearable"
+      ],
+      "substances": [
+        "BPA"
+      ],
+      "certifications": [
+        "Battery",
+        "GPSR",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "annual_revenue_eur": 2600000,
+      "employees": 21,
+      "description": "KidVision Cams SARL manufactures LittleView Baby Monitor, KidCam Watch and similar products for the EU market. Known compliance gaps: LittleView baby monitor still uses a micro-USB charging port (USB-C common-charger rule)",
+      "products": [
+        {
+          "product_id": "P022-A",
+          "name": "LittleView Baby Monitor",
+          "category": "smart_home",
+          "substances": [
+            "BPA"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "li-ion",
+          "battery_capacity_wh": 8,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "micro_usb",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "GPSR",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P022-B",
+          "name": "KidCam Watch",
+          "category": "wearable",
+          "substances": [
+            "BPA"
+          ],
+          "has_battery": true,
+          "battery_chemistry": "li-po",
+          "battery_capacity_wh": 1.6,
+          "battery_type": "portable",
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "GPSR",
+            "RoHS"
+          ]
+        }
+      ],
+      "sells_in": [
+        "EU"
+      ],
+      "preferred_channel": "email"
+    }
+  ]
+}

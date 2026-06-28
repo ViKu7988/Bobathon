@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🛡️ Regulatory Radar — Live Demo QR</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:-apple-system,"Segoe UI",sans-serif;background:#f0f4ff;
+          display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;}
+    .card{background:#fff;border-radius:16px;padding:40px 32px;text-align:center;
+           max-width:420px;width:100%;box-shadow:0 8px 32px rgba(26,86,219,.15);}
+    .logo{font-size:48px;margin-bottom:12px;}
+    h1{font-size:22px;font-weight:800;color:#1a56db;margin-bottom:4px;}
+    .sub{font-size:14px;color:#57606a;margin-bottom:28px;line-height:1.5;}
+    .qr-wrap{background:#f7f8fa;border-radius:12px;padding:20px;display:inline-block;margin-bottom:24px;}
+    .qr-wrap img{width:220px;height:220px;display:block;}
+    .url-box{background:#f0f4ff;border-radius:8px;padding:10px 14px;
+              font-size:12px;color:#1a56db;word-break:break-all;margin-bottom:20px;
+              font-family:monospace;}
+    .steps{text-align:left;font-size:13px;color:#57606a;line-height:1.8;}
+    .steps strong{color:#1f2328;}
+    .divider{border:none;border-top:1px solid #e5e7eb;margin:20px 0;}
+    .powered{font-size:11px;color:#57606a;margin-top:16px;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🛡️</div>
+    <h1>Regulatory Radar</h1>
+    <p class="sub">Live Demo — IBM Bobathon 2025 · EcoComply<br>
+    Scan to open on your phone</p>
+
+    <div class="qr-wrap">
+      <img src="data:image/png;base64,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" alt="QR Code"/>
+    </div>
+
+    <div class="url-box">http://192.168.0.127:8888/onboard.html</div>
+
+    <div class="steps">
+      <strong>1.</strong> Scan the QR code with your phone camera<br>
+      <strong>2.</strong> Fill in your company profile (60 seconds)<br>
+      <strong>3.</strong> Select your product categories<br>
+      <strong>4.</strong> Enter your phone number<br>
+      <strong>5.</strong> Hit <strong>"Activate My Radar"</strong><br>
+      <strong>6.</strong> Watch your phone buzz ✅
+    </div>
+
+    <hr class="divider"/>
+    <p class="powered">
+      Powered by <strong>IBM Bob (Watsonx)</strong> &amp; <strong>Twilio</strong>
+    </p>
+  </div>
+</body>
+</html>

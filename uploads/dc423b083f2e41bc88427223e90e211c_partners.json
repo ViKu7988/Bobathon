@@ -1,0 +1,1977 @@
+{
+  "portfolio_version": "csv-upload",
+  "partners": [
+    {
+      "id": "P001",
+      "company_name": "LumaNord Lighting GmbH",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@lumanord.example.com",
+      "phone": "+49 7131 000101",
+      "whatsapp": "+49 7131 000101",
+      "country": "DE",
+      "sector": "Electronics",
+      "product_categories": [
+        "led_lighting"
+      ],
+      "substances": [
+        "lead",
+        "DEHP"
+      ],
+      "certifications": [
+        "RoHS",
+        "WEEE",
+        "EMC",
+        "LVD",
+        "EnergyLabel",
+        "REACH",
+        "RED"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P001-A",
+          "name": "NordBeam LED Panel 600",
+          "category": "led_lighting",
+          "substances": [
+            "lead"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE",
+            "EMC",
+            "LVD",
+            "EnergyLabel"
+          ]
+        },
+        {
+          "product_id": "P001-B",
+          "name": "FlexGlow RGB Strip 5m",
+          "category": "led_lighting",
+          "substances": [
+            "lead",
+            "DEHP"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "barrel",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "REACH",
+            "WEEE",
+            "EMC",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P001-C",
+          "name": "SmartGlow Wi-Fi Bulb",
+          "category": "led_lighting",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "EnergyLabel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "company_name": "VoltEdge Power BV",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@voltedge.example.com",
+      "phone": "+31 20 0000202",
+      "whatsapp": "+31 20 0000202",
+      "country": "NL",
+      "sector": "Electronics",
+      "product_categories": [
+        "power_supply"
+      ],
+      "substances": [],
+      "certifications": [
+        "RoHS",
+        "LVD",
+        "EMC",
+        "ESPR",
+        "EnergyLabel"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P002-A",
+          "name": "GaN USB-C Charger 65W",
+          "category": "power_supply",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "LVD",
+            "EMC",
+            "ESPR",
+            "EnergyLabel"
+          ]
+        },
+        {
+          "product_id": "P002-B",
+          "name": "DeskDock USB-C Multiport",
+          "category": "power_supply",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "LVD",
+            "EMC",
+            "ESPR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "company_name": "CellCore Energy Sp. z o.o.",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@cellcore.example.com",
+      "phone": "+48 22 0000303",
+      "whatsapp": "+48 22 0000303",
+      "country": "PL",
+      "sector": "Electronics",
+      "product_categories": [
+        "battery_pack"
+      ],
+      "substances": [],
+      "certifications": [
+        "Battery",
+        "RoHS",
+        "WEEE",
+        "GPSR"
+      ],
+      "eu_market": true,
+      "preferred_channel": "sms",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P003-A",
+          "name": "PowerBank 20k Portable",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 74.0,
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P003-B",
+          "name": "IndusCell 2.5kWh Module",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "industrial",
+          "battery_capacity_wh": 2500.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P003-C",
+          "name": "CoinCell CR2032 10-pack",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "button_cell",
+          "battery_capacity_wh": 0.5,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "GPSR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P004",
+      "company_name": "SonicWave Audio SARL",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@sonicwave.example.com",
+      "phone": "+33 1 00000404",
+      "whatsapp": "+33 1 00000404",
+      "country": "FR",
+      "sector": "Electronics",
+      "product_categories": [
+        "audio"
+      ],
+      "substances": [
+        "BPA"
+      ],
+      "certifications": [
+        "RED",
+        "Battery",
+        "REACH",
+        "RoHS",
+        "WEEE",
+        "EMC"
+      ],
+      "eu_market": true,
+      "preferred_channel": "whatsapp",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P004-A",
+          "name": "WaveGo Bluetooth Speaker",
+          "category": "audio",
+          "substances": [
+            "BPA"
+          ],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 12.0,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "REACH",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P004-B",
+          "name": "StudioPods Headphones",
+          "category": "audio",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 1.5,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P004-C",
+          "name": "WaveHome Soundbar",
+          "category": "audio",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "EMC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "company_name": "HomePulse Smart GmbH",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@homepulse.example.com",
+      "phone": "+49 30 000505",
+      "whatsapp": "+49 30 000505",
+      "country": "DE",
+      "sector": "Electronics",
+      "product_categories": [
+        "smart_home"
+      ],
+      "substances": [],
+      "certifications": [
+        "RED",
+        "RoHS",
+        "WEEE",
+        "LVD"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P005-A",
+          "name": "MotionSense Sensor",
+          "category": "smart_home",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "button_cell",
+          "battery_capacity_wh": 0.6,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P005-B",
+          "name": "HomeHub Controller",
+          "category": "smart_home",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "micro_usb",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P005-C",
+          "name": "PlugSense Smart Plug",
+          "category": "smart_home",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "WEEE",
+            "LVD"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P006",
+      "company_name": "FitTrack Wearables AB",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@fittrack.example.com",
+      "phone": "+46 8 00000606",
+      "whatsapp": "+46 8 00000606",
+      "country": "SE",
+      "sector": "Electronics",
+      "product_categories": [
+        "wearable"
+      ],
+      "substances": [
+        "PFAS_PFHxA"
+      ],
+      "certifications": [
+        "RED",
+        "Battery",
+        "REACH",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "preferred_channel": "sms",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P006-A",
+          "name": "PulseBand Activity Tracker",
+          "category": "wearable",
+          "substances": [
+            "PFAS_PFHxA"
+          ],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 1.1,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "REACH",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P006-B",
+          "name": "SportWatch GPS",
+          "category": "wearable",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 2.2,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P007",
+      "company_name": "MediBand Health AG",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@mediband.example.com",
+      "phone": "+41 44 0000707",
+      "whatsapp": "+41 44 0000707",
+      "country": "CH",
+      "sector": "Electronics",
+      "product_categories": [
+        "medical_wearable"
+      ],
+      "substances": [
+        "lead"
+      ],
+      "certifications": [
+        "MDR",
+        "RED",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU",
+        "CH"
+      ],
+      "products": [
+        {
+          "product_id": "P007-A",
+          "name": "CardioPatch Monitor",
+          "category": "medical_wearable",
+          "substances": [
+            "lead"
+          ],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 2.0,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "medical",
+          "markets": [
+            "EU",
+            "CH"
+          ],
+          "compliance_streams": [
+            "MDR",
+            "RED",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P007-B",
+          "name": "GlucoSense CGM Patch",
+          "category": "medical_wearable",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "button_cell",
+          "battery_capacity_wh": 0.4,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "medical",
+          "markets": [
+            "EU",
+            "CH"
+          ],
+          "compliance_streams": [
+            "MDR",
+            "RED",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P008",
+      "company_name": "PlayBright Toys S.r.l.",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@playbright.example.com",
+      "phone": "+39 02 0000808",
+      "whatsapp": "+39 02 0000808",
+      "country": "IT",
+      "sector": "Electronics",
+      "product_categories": [
+        "toy_electronic"
+      ],
+      "substances": [
+        "DEHP"
+      ],
+      "certifications": [
+        "ToySafety",
+        "REACH",
+        "RoHS",
+        "GPSR",
+        "Battery"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P008-A",
+          "name": "RoboPup Interactive Toy",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "REACH",
+            "RoHS",
+            "GPSR"
+          ]
+        },
+        {
+          "product_id": "P008-B",
+          "name": "SingAlong Karaoke Mic",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP"
+          ],
+          "has_battery": true,
+          "battery_type": "button_cell",
+          "battery_capacity_wh": 0.3,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "GPSR",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P008-C",
+          "name": "JuniorSTEM Robotics Kit",
+          "category": "toy_electronic",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 9.0,
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "GPSR",
+            "Battery",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P009",
+      "company_name": "CableMax Connect S.L.",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@cablemax.example.com",
+      "phone": "+34 91 0000909",
+      "whatsapp": "+34 91 0000909",
+      "country": "ES",
+      "sector": "Electronics",
+      "product_categories": [
+        "cable"
+      ],
+      "substances": [
+        "DEHP",
+        "MCCP",
+        "lead"
+      ],
+      "certifications": [
+        "RoHS",
+        "REACH"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "ES",
+        "FR",
+        "IT"
+      ],
+      "products": [
+        {
+          "product_id": "P009-A",
+          "name": "UltraLink USB-C Cable 2m",
+          "category": "cable",
+          "substances": [
+            "DEHP",
+            "MCCP",
+            "lead"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "ES",
+            "FR",
+            "IT"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "REACH"
+          ]
+        },
+        {
+          "product_id": "P009-B",
+          "name": "HDMI 2.1 Cable 3m",
+          "category": "cable",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "ES",
+            "FR",
+            "IT"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "REACH"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P010",
+      "company_name": "DisplayOne Visuals GmbH",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@displayone.example.com",
+      "phone": "+49 89 001010",
+      "whatsapp": "+49 89 001010",
+      "country": "DE",
+      "sector": "Electronics",
+      "product_categories": [
+        "display"
+      ],
+      "substances": [
+        "mercury"
+      ],
+      "certifications": [
+        "WEEE",
+        "EnergyLabel",
+        "ESPR",
+        "EMC",
+        "LVD",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P010-A",
+          "name": "UltraView 27 Monitor",
+          "category": "display",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "WEEE",
+            "EnergyLabel",
+            "ESPR",
+            "EMC",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P010-B",
+          "name": "Legacy CCFL Panel (spare)",
+          "category": "display",
+          "substances": [
+            "mercury"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P010-C",
+          "name": "TouchPanel 15 Industrial",
+          "category": "display",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "WEEE",
+            "EMC",
+            "LVD",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P011",
+      "company_name": "GridSense IoT BV",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@gridsense.example.com",
+      "phone": "+31 10 001111",
+      "whatsapp": "+31 10 001111",
+      "country": "NL",
+      "sector": "Electronics",
+      "product_categories": [
+        "iot_module"
+      ],
+      "substances": [
+        "TBBPA",
+        "decaBDE"
+      ],
+      "certifications": [
+        "RED",
+        "REACH",
+        "POPs",
+        "RoHS",
+        "EMC"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU",
+        "UK"
+      ],
+      "products": [
+        {
+          "product_id": "P011-A",
+          "name": "EdgeNode Industrial Module",
+          "category": "iot_module",
+          "substances": [
+            "TBBPA",
+            "decaBDE"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU",
+            "UK"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "POPs",
+            "RoHS",
+            "EMC"
+          ]
+        },
+        {
+          "product_id": "P011-B",
+          "name": "EdgeGateway 5G",
+          "category": "iot_module",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU",
+            "UK"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "RoHS",
+            "EMC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P012",
+      "company_name": "SolarMicro Tech S.L.",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@solarmicro.example.com",
+      "phone": "+34 93 001212",
+      "whatsapp": "+34 93 001212",
+      "country": "ES",
+      "sector": "Electronics",
+      "product_categories": [
+        "pv_inverter"
+      ],
+      "substances": [
+        "cadmium"
+      ],
+      "certifications": [
+        "RoHS",
+        "WEEE",
+        "LVD",
+        "EMC"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P012-A",
+          "name": "SunLink Micro-Inverter",
+          "category": "pv_inverter",
+          "substances": [
+            "cadmium"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE",
+            "LVD",
+            "EMC"
+          ]
+        },
+        {
+          "product_id": "P012-B",
+          "name": "HybridInverter Pro (Cd-free)",
+          "category": "pv_inverter",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RoHS",
+            "WEEE",
+            "LVD",
+            "EMC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P013",
+      "company_name": "RideVolt Mobility GmbH",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@ridevolt.example.com",
+      "phone": "+49 711 001313",
+      "whatsapp": "+49 711 001313",
+      "country": "DE",
+      "sector": "Electronics",
+      "product_categories": [
+        "emobility_battery"
+      ],
+      "substances": [],
+      "certifications": [
+        "Battery",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "preferred_channel": "sms",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P013-A",
+          "name": "e-Scooter Battery Pack 280Wh",
+          "category": "emobility_battery",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "lmt",
+          "battery_capacity_wh": 280.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P013-B",
+          "name": "eBike Battery 504Wh",
+          "category": "emobility_battery",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "lmt",
+          "battery_capacity_wh": 504.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P014",
+      "company_name": "NetLink Systems Sp. z o.o.",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@netlink.example.com",
+      "phone": "+48 12 001414",
+      "whatsapp": "+48 12 001414",
+      "country": "PL",
+      "sector": "Electronics",
+      "product_categories": [
+        "networking"
+      ],
+      "substances": [
+        "TBBPA"
+      ],
+      "certifications": [
+        "RED",
+        "REACH",
+        "ESPR",
+        "RoHS",
+        "EMC",
+        "LVD"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P014-A",
+          "name": "AirLink Wi-Fi 6 Router",
+          "category": "networking",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "barrel",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "ESPR",
+            "RoHS",
+            "EMC",
+            "LVD"
+          ]
+        },
+        {
+          "product_id": "P014-B",
+          "name": "MeshPoint Mini",
+          "category": "networking",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "REACH",
+            "RoHS",
+            "EMC"
+          ]
+        },
+        {
+          "product_id": "P014-C",
+          "name": "AirLink Router UK Edition",
+          "category": "networking",
+          "substances": [
+            "TBBPA"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "barrel",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "UK"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P015",
+      "company_name": "BrewEasy Appliances S.r.l.",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@breweasy.example.com",
+      "phone": "+39 06 001515",
+      "whatsapp": "+39 06 001515",
+      "country": "IT",
+      "sector": "Electronics",
+      "product_categories": [
+        "appliance"
+      ],
+      "substances": [],
+      "certifications": [
+        "LVD",
+        "EMC",
+        "WEEE",
+        "PPWR"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "IT",
+        "DE",
+        "AT"
+      ],
+      "products": [
+        {
+          "product_id": "P015-A",
+          "name": "QuickBoil Kettle 1.7L",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "IT",
+            "DE",
+            "AT"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE",
+            "PPWR"
+          ]
+        },
+        {
+          "product_id": "P015-B",
+          "name": "ToastMaster 2-Slice",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "IT",
+            "DE",
+            "AT"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P016",
+      "company_name": "ChromaPrint 3D GmbH",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@chromaprint.example.com",
+      "phone": "+49 351 001616",
+      "whatsapp": "+49 351 001616",
+      "country": "DE",
+      "sector": "Electronics",
+      "product_categories": [
+        "printer_3d"
+      ],
+      "substances": [
+        "lead"
+      ],
+      "certifications": [
+        "Machinery",
+        "LVD",
+        "EMC",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU",
+        "US"
+      ],
+      "products": [
+        {
+          "product_id": "P016-A",
+          "name": "ChromaPrint X1 (EU)",
+          "category": "printer_3d",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU",
+            "US"
+          ],
+          "compliance_streams": [
+            "Machinery",
+            "LVD",
+            "EMC",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P016-B",
+          "name": "ChromaPrint X1 US Edition",
+          "category": "printer_3d",
+          "substances": [
+            "lead"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "US"
+          ],
+          "compliance_streams": [
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P016-C",
+          "name": "ResinPrint Mini (EU)",
+          "category": "printer_3d",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU",
+            "US"
+          ],
+          "compliance_streams": [
+            "Machinery",
+            "LVD",
+            "EMC",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P017",
+      "company_name": "AeroSense Drones SARL",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@aerosense.example.com",
+      "phone": "+33 4 00001717",
+      "whatsapp": "+33 4 00001717",
+      "country": "FR",
+      "sector": "Electronics",
+      "product_categories": [
+        "drone"
+      ],
+      "substances": [
+        "PFAS_PFHxA"
+      ],
+      "certifications": [
+        "RED",
+        "Battery",
+        "REACH",
+        "Machinery",
+        "GPSR",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "preferred_channel": "whatsapp",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P017-A",
+          "name": "SkyScout Camera Drone",
+          "category": "drone",
+          "substances": [
+            "PFAS_PFHxA"
+          ],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 38.0,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "REACH",
+            "Machinery",
+            "GPSR"
+          ]
+        },
+        {
+          "product_id": "P017-B",
+          "name": "MicroDrone Mini",
+          "category": "drone",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 5.0,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "GPSR",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P018",
+      "company_name": "PureAir Devices BV",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@pureair.example.com",
+      "phone": "+31 70 001818",
+      "whatsapp": "+31 70 001818",
+      "country": "NL",
+      "sector": "Electronics",
+      "product_categories": [
+        "appliance"
+      ],
+      "substances": [],
+      "certifications": [
+        "LVD",
+        "EMC",
+        "WEEE",
+        "PPWR"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P018-A",
+          "name": "FreshFlow Air Purifier",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard",
+            "plastic_film"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE",
+            "PPWR"
+          ]
+        },
+        {
+          "product_id": "P018-B",
+          "name": "DryAir Dehumidifier",
+          "category": "appliance",
+          "substances": [],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "plastic_film",
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "WEEE",
+            "PPWR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P019",
+      "company_name": "GlowToys Junior Sp. z o.o.",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@glowtoys.example.com",
+      "phone": "+48 61 001919",
+      "whatsapp": "+48 61 001919",
+      "country": "PL",
+      "sector": "Electronics",
+      "product_categories": [
+        "toy_electronic"
+      ],
+      "substances": [
+        "DEHP",
+        "lead"
+      ],
+      "certifications": [
+        "ToySafety",
+        "GPSR",
+        "REACH",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P019-A",
+          "name": "StarLite Night Toy",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP",
+            "lead"
+          ],
+          "has_battery": true,
+          "battery_type": "button_cell",
+          "battery_capacity_wh": 0.2,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "GPSR",
+            "REACH",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P019-B",
+          "name": "MelodyPlush Toy",
+          "category": "toy_electronic",
+          "substances": [
+            "DEHP"
+          ],
+          "has_battery": true,
+          "battery_type": "button_cell",
+          "battery_capacity_wh": 0.2,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "toy",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "ToySafety",
+            "GPSR",
+            "RoHS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P020",
+      "company_name": "ThermoControl Industrie GmbH",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@thermocontrol.example.com",
+      "phone": "+49 621 002020",
+      "whatsapp": "+49 621 002020",
+      "country": "DE",
+      "sector": "Electronics",
+      "product_categories": [
+        "appliance",
+        "iot_module"
+      ],
+      "substances": [
+        "decaBDE"
+      ],
+      "certifications": [
+        "LVD",
+        "EMC",
+        "RoHS",
+        "POPs",
+        "RED"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P020-A",
+          "name": "IndusTherm Controller",
+          "category": "appliance",
+          "substances": [
+            "decaBDE"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "LVD",
+            "EMC",
+            "RoHS",
+            "POPs"
+          ]
+        },
+        {
+          "product_id": "P020-B",
+          "name": "FlowMeter Industrial",
+          "category": "iot_module",
+          "substances": [
+            "decaBDE"
+          ],
+          "has_battery": false,
+          "battery_type": "none",
+          "battery_capacity_wh": 0.0,
+          "has_radio": true,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "RoHS",
+            "POPs",
+            "EMC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P021",
+      "company_name": "NomadPower Outdoor AB",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@nomadpower.example.com",
+      "phone": "+46 31 002121",
+      "whatsapp": "+46 31 002121",
+      "country": "SE",
+      "sector": "Electronics",
+      "product_categories": [
+        "battery_pack"
+      ],
+      "substances": [],
+      "certifications": [
+        "Battery",
+        "RoHS",
+        "WEEE"
+      ],
+      "eu_market": true,
+      "preferred_channel": "sms",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P021-A",
+          "name": "TrailCell 512 Power Station",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 512.0,
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P021-B",
+          "name": "BaseCell 2.0kWh Industrial",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "industrial",
+          "battery_capacity_wh": 2048.0,
+          "has_radio": false,
+          "connector": "none",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "industrial",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        },
+        {
+          "product_id": "P021-C",
+          "name": "PocketCell 99Wh",
+          "category": "battery_pack",
+          "substances": [],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 99.0,
+          "has_radio": false,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "Battery",
+            "RoHS",
+            "WEEE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P022",
+      "company_name": "KidVision Cams SARL",
+      "contact_name": "Compliance Desk",
+      "email": "alerts@kidvision.example.com",
+      "phone": "+33 5 00002222",
+      "whatsapp": "+33 5 00002222",
+      "country": "FR",
+      "sector": "Electronics",
+      "product_categories": [
+        "smart_home",
+        "wearable"
+      ],
+      "substances": [
+        "BPA"
+      ],
+      "certifications": [
+        "RED",
+        "Battery",
+        "GPSR",
+        "RoHS"
+      ],
+      "eu_market": true,
+      "preferred_channel": "email",
+      "sells_in": [
+        "EU"
+      ],
+      "products": [
+        {
+          "product_id": "P022-A",
+          "name": "LittleView Baby Monitor",
+          "category": "smart_home",
+          "substances": [
+            "BPA"
+          ],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 8.0,
+          "has_radio": true,
+          "connector": "micro_usb",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "GPSR",
+            "RoHS"
+          ]
+        },
+        {
+          "product_id": "P022-B",
+          "name": "KidCam Watch",
+          "category": "wearable",
+          "substances": [
+            "BPA"
+          ],
+          "has_battery": true,
+          "battery_type": "portable",
+          "battery_capacity_wh": 1.6,
+          "has_radio": true,
+          "connector": "usb_c",
+          "packaging": [
+            "cardboard"
+          ],
+          "intended_use": "consumer",
+          "markets": [
+            "EU"
+          ],
+          "compliance_streams": [
+            "RED",
+            "Battery",
+            "GPSR",
+            "RoHS"
+          ]
+        }
+      ]
+    }
+  ]
+}
