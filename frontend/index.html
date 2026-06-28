@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regulatory Radar — EcoComply</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+  <!-- ── NAV ───────────────────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-logo">🛡️</span>
+        <span class="nav-name">Regulatory<strong>Radar</strong></span>
+        <span class="nav-badge">by EcoComply</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="onboard.html" class="nav-link">Get Started</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="findings.html" class="nav-link">Findings</a>
+        <a href="pipeline.html" class="nav-link">Pipeline</a>
+      </div>
+      <a href="onboard.html" class="btn btn-primary nav-cta">Try Live Demo</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile nav drawer -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="onboard.html"   class="nav-link">Get Started</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="findings.html" class="nav-link">Findings</a>
+        <a href="pipeline.html"  class="nav-link">Pipeline</a>
+    <a href="onboard.html"   class="btn btn-primary">Try Live Demo</a>
+  </div>
+
+  <!-- ── HERO ──────────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">IBM Bobathon 2025 · Powered by IBM Bob &amp; Twilio</div>
+      <h1 class="hero-title">
+        Know before you miss<br>
+        an EU compliance deadline.
+      </h1>
+      <p class="hero-sub">
+        Regulatory Radar watches EU legislation around the clock, matches every rule change to your product portfolio, and sends a real-time alert directly to your phone or inbox — before a fine lands.
+      </p>
+      <div class="hero-actions">
+        <a href="onboard.html" class="btn btn-primary btn-lg">Set Up My Radar →</a>
+        <a href="pipeline.html" class="btn btn-secondary btn-lg">See It Run Live</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">5</span><span class="stat-l">EU Regulations<br>Monitored</span></div>
+        <div class="stat"><span class="stat-n">10</span><span class="stat-l">SME Portfolios<br>Tracked</span></div>
+        <div class="stat"><span class="stat-n">€100k+</span><span class="stat-l">Max Fine<br>Per Market</span></div>
+        <div class="stat"><span class="stat-n">3</span><span class="stat-l">Alert Channels<br>WhatsApp · SMS · Email</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ───────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Five automated steps. Zero manual monitoring.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <div class="step-icon">📡</div>
+          <h3>Monitor</h3>
+          <p>Pulls continuously from EUR-Lex, ECHA, and national EPR registers. Live RSS feeds + pre-parsed snapshots as fallback.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <div class="step-icon">🤖</div>
+          <h3>Understand</h3>
+          <p>IBM Bob (Watsonx Granite) reads each update, extracts what changed, which regulation, the deadline, and affected product categories.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <div class="step-icon">🎯</div>
+          <h3>Match</h3>
+          <p>Maps each regulatory change to your specific partners and products using a scored multi-factor matching engine. High precision, low false positives.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <div class="step-icon">📲</div>
+          <h3>Alert</h3>
+          <p>Sends an actionable notification via WhatsApp, SMS, or email: "New rule X applies to your product Y. Deadline Z. Here's what to do."</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">5</div>
+          <div class="step-icon">📊</div>
+          <h3>Track</h3>
+          <p>Dashboard shows your risk portfolio at a glance. Audit log of every alert. Acknowledgement tracking. Full compliance trail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── REGULATIONS COVERED ───────────────────────────────────────────────── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Regulations We Track</h2>
+        <p>The EU rules that catch electronics SMEs off-guard</p>
+      </div>
+      <div class="reg-grid" id="regGrid">
+        <div class="reg-card critical">
+          <div class="reg-urgency">⚠️ CRITICAL</div>
+          <h3>EU Battery Passport</h3>
+          <div class="reg-num">Regulation (EU) 2023/1542</div>
+          <div class="reg-deadline">📅 Deadline: 18 Feb 2027</div>
+          <p>Mandatory digital passport for all industrial, EV, and LMT batteries. QR code + lifecycle data required.</p>
+          <div class="reg-affects">Affects: Lithium batteries · EV components · Energy storage</div>
+        </div>
+        <div class="reg-card high">
+          <div class="reg-urgency">🔶 HIGH</div>
+          <h3>PPWR</h3>
+          <div class="reg-num">Regulation (EU) 2025/40</div>
+          <div class="reg-deadline">📅 Deadline: 12 Aug 2026</div>
+          <p>Mandatory recyclability criteria and recycled content minimums for all EU packaging.</p>
+          <div class="reg-affects">Affects: Plastic packaging · Consumer goods · Textiles</div>
+        </div>
+        <div class="reg-card critical">
+          <div class="reg-urgency">⚠️ CRITICAL</div>
+          <h3>RED Cybersecurity</h3>
+          <div class="reg-num">Delegated Reg. (EU) 2022/30</div>
+          <div class="reg-deadline">📅 Deadline: 1 Aug 2025</div>
+          <p>All internet-connected radio devices must meet cybersecurity, privacy, and anti-fraud requirements under RED.</p>
+          <div class="reg-affects">Affects: IoT devices · Wireless · Consumer electronics</div>
+        </div>
+        <div class="reg-card high">
+          <div class="reg-urgency">🔶 HIGH</div>
+          <h3>CBAM</h3>
+          <div class="reg-num">Regulation (EU) 2023/956</div>
+          <div class="reg-deadline">📅 Full pricing: 1 Jan 2026</div>
+          <p>Carbon border adjustment for steel, aluminium, cement and other carbon-intensive imports into the EU.</p>
+          <div class="reg-affects">Affects: Steel · Aluminium · Carbon-intensive goods</div>
+        </div>
+        <div class="reg-card high">
+          <div class="reg-urgency">🔶 HIGH</div>
+          <h3>REACH SVHC Update</h3>
+          <div class="reg-num">REACH (EC) 1907/2006 — Jan 2025</div>
+          <div class="reg-deadline">📅 Notify by: 14 Jul 2025</div>
+          <p>3 new SVHCs added to the Candidate List. SCIP notification required if >0.1% w/w in articles.</p>
+          <div class="reg-affects">Affects: Chemical substances · Coatings · PCBs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────────────────────────── -->
+  <section class="section cta-section">
+    <div class="container cta-inner">
+      <h2>Ready to stop monitoring manually?</h2>
+      <p>Create your profile in under 60 seconds. Get your first alert instantly.</p>
+      <a href="onboard.html" class="btn btn-primary btn-xl">Set Up My Radar — It's Free →</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p>🛡️ <strong>Regulatory Radar</strong> by EcoComply · Built at IBM Bobathon 2025 · GDGoC TUM Heilbronn</p>
+      <p class="footer-sub">Powered by <strong>IBM Bob (Watsonx Granite)</strong> · Alerts via <strong>Twilio</strong></p>
+      <p class="footer-sub">This is a hackathon demo. Not legal advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

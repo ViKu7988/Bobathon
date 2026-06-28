@@ -1,0 +1,36 @@
+# Netlify configuration — Regulatory Radar (EcoComply)
+# Static site — no build step required.
+
+[build]
+  publish = "."        # serve everything in this folder as-is
+
+# ── Clean URL redirects ─────────────────────────────────────────────────────
+# Allow navigating directly to /dashboard, /pipeline, /onboard without .html
+
+[[redirects]]
+  from   = "/dashboard"
+  to     = "/dashboard.html"
+  status = 200
+
+[[redirects]]
+  from   = "/findings"
+  to     = "/findings.html"
+  status = 200
+
+[[redirects]]
+  from   = "/pipeline"
+  to     = "/pipeline.html"
+  status = 200
+
+[[redirects]]
+  from   = "/onboard"
+  to     = "/onboard.html"
+  status = 200
+
+# ── Security headers ─────────────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"

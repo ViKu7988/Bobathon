@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Started — Regulatory Radar</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* ── Onboard layout ──────────────────────────────────────────────────── */
+    .onboard-main { min-height: calc(100vh - 60px); background: var(--surface); }
+    .onboard-container {
+      display: grid; grid-template-columns: 340px 1fr;
+      min-height: calc(100vh - 60px);
+    }
+    @media(max-width:860px){
+      .onboard-container { grid-template-columns: 1fr; }
+      .onboard-intro { display:none; }
+    }
+
+    /* Left intro */
+    .onboard-intro {
+      background: linear-gradient(160deg, #1a56db 0%, #1347c4 60%, #0f3a9e 100%);
+      padding: 48px 36px; display: flex; align-items: flex-start;
+      position: sticky; top: 60px; height: calc(100vh - 60px); overflow: auto;
+    }
+    .onboard-intro-inner { color: #fff; max-width: 280px; }
+    .intro-logo { font-size: 48px; margin-bottom: 20px; }
+    .onboard-intro h1 { font-size: 26px; font-weight: 700; line-height: 1.3; margin-bottom: 16px; }
+    .onboard-intro p  { font-size: 14px; line-height: 1.7; opacity: .9; margin-bottom: 24px; }
+    .intro-checklist  { list-style: none; font-size: 13px; line-height: 2; }
+    .intro-powered    { margin-top: 32px; font-size: 12px; opacity: .75; }
+    .intro-powered strong { opacity: 1; }
+
+    /* Right form */
+    .onboard-form-wrap { padding: 40px 48px; background: var(--bg); overflow-y: auto; }
+    @media(max-width:640px){ .onboard-form-wrap { padding: 24px 16px; } }
+
+    /* ── Mode picker ─────────────────────────────────────────────────────── */
+    .mode-picker { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 32px; }
+    .mode-card {
+      border: 2px solid var(--border); border-radius: var(--radius);
+      padding: 18px 14px; text-align: center; cursor: pointer;
+      transition: all .15s; background: var(--bg);
+    }
+    .mode-card:hover { border-color: var(--accent); background: #f0f4ff; }
+    .mode-card.active { border-color: var(--accent); background: #e8f0fe; }
+    .mode-card-icon { font-size: 28px; margin-bottom: 8px; }
+    .mode-card-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .mode-card-sub   { font-size: 12px; color: var(--muted); line-height: 1.4; }
+    @media(max-width:540px){ .mode-picker { grid-template-columns: 1fr; } }
+
+    /* ── Sample partner picker ───────────────────────────────────────────── */
+    .sample-picker { display: none; }
+    .sample-picker.active { display: block; }
+    .sample-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px; }
+    .sample-card {
+      border: 2px solid var(--border); border-radius: 8px; padding: 12px 14px;
+      cursor: pointer; transition: all .15s; background: var(--bg);
+    }
+    .sample-card:hover  { border-color: var(--accent); background: #f8faff; }
+    .sample-card.active { border-color: var(--accent); background: #e8f0fe; }
+    .sc-name    { font-weight: 600; font-size: 13px; margin-bottom: 3px; }
+    .sc-meta    { font-size: 11px; color: var(--muted); }
+    .sc-tags    { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+    .sc-tag     { font-size: 10px; padding: 1px 6px; border-radius: 10px; background: var(--surface); color: var(--muted); }
+
+    /* ── Upload section ──────────────────────────────────────────────────── */
+    .upload-section-new { display: none; }
+    .upload-section-new.active { display: block; }
+    .upload-tabs { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+    .upload-tab  {
+      padding: 6px 14px; border: 1px solid var(--border); border-radius: 6px;
+      font-size: 13px; cursor: pointer; background: var(--bg);
+      transition: all .15s;
+    }
+    .upload-tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .upload-pane { display: none; }
+    .upload-pane.active { display: block; }
+    .dropzone {
+      border: 2px dashed var(--border); border-radius: var(--radius);
+      padding: 36px 24px; text-align: center; cursor: pointer;
+      transition: all .15s; position: relative;
+    }
+    .dropzone:hover, .dropzone.dragover { border-color: var(--accent); background: #f0f4ff; }
+    .dropzone-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+    .dropzone-icon  { font-size: 36px; margin-bottom: 10px; }
+    .dropzone-text  { font-size: 14px; color: var(--muted); }
+    .upload-status  { margin-top: 10px; font-size: 13px; padding: 8px 12px; border-radius: 6px; }
+    .upload-status.success { background: #dcfce7; color: var(--green); }
+    .upload-status.error   { background: #fee2e2; color: var(--red); }
+    .cloud-upload-form { display: flex; flex-direction: column; gap: 8px; }
+
+    /* ── Manual form section ─────────────────────────────────────────────── */
+    .manual-section { display: none; }
+    .manual-section.active { display: block; }
+    .form-section { margin-bottom: 28px; }
+    .form-section-title { font-size: 15px; font-weight: 600; margin-bottom: 14px;
+      padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .field-row   { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+    @media(max-width:540px){ .field-row { grid-template-columns: 1fr; } }
+    .field-group { display: flex; flex-direction: column; gap: 5px; }
+    .field-label { font-size: 12px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+    .field-input { height: 40px; border: 1px solid var(--border); border-radius: 8px;
+      padding: 0 12px; font-size: 14px; width: 100%; transition: border-color .15s; }
+    .field-input:focus { outline: none; border-color: var(--accent); }
+    .field-hint  { font-size: 11px; color: var(--muted); }
+    .checkbox-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .checkbox-label { font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 5px; }
+    .tag-selector { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag-btn {
+      padding: 5px 12px; border: 1px solid var(--border); border-radius: 20px;
+      font-size: 12px; cursor: pointer; background: var(--bg); transition: all .15s;
+    }
+    .tag-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* ── Common contact fields (all modes) ───────────────────────────────── */
+    .contact-section {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; margin-bottom: 24px;
+    }
+    .contact-section h3 { font-size: 14px; font-weight: 600; margin-bottom: 14px; }
+
+    /* ── Submit ──────────────────────────────────────────────────────────── */
+    .form-submit { text-align: center; margin-top: 8px; }
+    .spinner { display: inline-block; width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.4);
+      border-top-color: #fff; border-radius: 50%; animation: spin .7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Results panel ───────────────────────────────────────────────────── */
+    .results-panel { display: none; }
+    .results-panel.active { display: block; }
+    .results-header { text-align: center; padding: 24px 0 20px; }
+    .results-icon   { font-size: 48px; }
+    .results-header h2 { font-size: 22px; font-weight: 700; margin: 8px 0 6px; }
+    .results-header p  { font-size: 14px; color: var(--muted); }
+    .risk-badge-wrap { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-bottom: 20px; }
+    .risk-badge { padding: 8px 24px; border-radius: 20px; font-size: 14px; font-weight: 700; }
+    .risk-badge.critical { background: #fee2e2; color: var(--red); }
+    .risk-badge.high     { background: #fef3c7; color: var(--orange); }
+    .risk-badge.medium   { background: #fef9c3; color: var(--yellow); }
+    .risk-badge.low      { background: #dcfce7; color: var(--green); }
+    .risk-score-label { font-size: 13px; color: var(--muted); }
+    .risk-summary-text {
+      background: var(--surface); border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 13px;
+      line-height: 1.7; margin-bottom: 24px; color: var(--text);
+    }
+
+    /* Findings in results */
+    .results-findings { margin-bottom: 24px; }
+    .results-findings h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px;
+      display: flex; align-items: center; gap: 8px; }
+    .finding-card {
+      border: 1px solid var(--border); border-radius: 8px;
+      margin-bottom: 10px; overflow: hidden;
+    }
+    .finding-card-header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      padding: 12px 14px 8px; gap: 10px; flex-wrap: wrap;
+    }
+    .finding-reg-name { font-size: 13px; font-weight: 600; }
+    .finding-sev { padding: 2px 9px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+    .finding-sev.high   { background: #fee2e2; color: var(--red); }
+    .finding-sev.medium { background: #fef3c7; color: var(--orange); }
+    .finding-sev.low    { background: #dcfce7; color: var(--green); }
+    .finding-gap {
+      padding: 8px 14px; font-size: 12px; color: var(--text);
+      background: var(--surface); border-top: 1px solid var(--border); line-height: 1.6;
+    }
+    .finding-meta {
+      padding: 8px 14px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+      border-top: 1px solid var(--border); font-size: 12px;
+    }
+    .finding-deadline { font-weight: 600; color: var(--orange); }
+    .finding-source {
+      display: inline-flex; align-items: center; gap: 4px;
+      color: var(--accent); text-decoration: none;
+    }
+    .finding-source:hover { text-decoration: underline; }
+    .finding-llm {
+      padding: 8px 14px; font-size: 12px; line-height: 1.6;
+      background: #f0f4ff; border-top: 1px solid #d0dcf8;
+      color: var(--text);
+    }
+    .finding-llm-label { font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .05em; color: var(--accent); margin-bottom: 3px; }
+
+    /* Alerts */
+    .alerts-section h3 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+    .alert-item  { display: flex; gap: 10px; align-items: center; padding: 10px 14px;
+      border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; font-size: 13px; }
+    .alert-icon  { font-size: 20px; flex-shrink: 0; }
+    .alert-detail { flex: 1; }
+    .alert-status { font-size: 12px; font-weight: 600; }
+    .alert-preview { font-size: 11px; color: var(--muted); }
+    .results-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-logo">🛡️</span>
+        <span class="nav-name">Regulatory<strong>Radar</strong></span>
+        <span class="nav-badge">by EcoComply</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-link">Home</a>
+        <a href="onboard.html"   class="nav-link active">Get Started</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="pipeline.html"  class="nav-link">Pipeline</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="onboard.html"   class="nav-link">Get Started</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="pipeline.html"  class="nav-link">Pipeline</a>
+    <a href="onboard.html"   class="btn btn-primary">Try Live Demo</a>
+  </div>
+
+  <main class="onboard-main">
+    <div class="onboard-container">
+
+      <!-- ── Left panel ──────────────────────────────────────────────────── -->
+      <div class="onboard-intro">
+        <div class="onboard-intro-inner">
+          <div class="intro-logo">🛡️</div>
+          <h1>Set Up Your<br>Regulatory Radar</h1>
+          <p>Pick a sample company, upload your own dataset, or fill in manually — IBM Bob instantly finds your EU compliance gaps and fires a real alert.</p>
+          <ul class="intro-checklist">
+            <li>✅ 22 real EcoComply partner profiles</li>
+            <li>✅ Upload JSON or CSV datasets</li>
+            <li>✅ AI gap analysis with source citations</li>
+            <li>✅ Real WhatsApp / SMS / email alert</li>
+            <li>✅ No legal jargon — plain language</li>
+          </ul>
+          <div class="intro-powered">
+            Powered by <strong>HuggingFace (Mistral-7B)</strong> &amp; <strong>Twilio</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Right panel ─────────────────────────────────────────────────── -->
+      <div class="onboard-form-wrap">
+
+        <!-- Results panel (shown after submit) -->
+        <div class="results-panel" id="resultsPanel">
+          <div class="results-header">
+            <div class="results-icon">🎯</div>
+            <h2>Your Radar is Live!</h2>
+            <p id="resultsIntro"></p>
+          </div>
+          <div class="risk-badge-wrap">
+            <div class="risk-badge" id="riskBadge"></div>
+            <div class="risk-score-label" id="riskScoreLabel"></div>
+          </div>
+          <div class="risk-summary-text" id="riskSummary"></div>
+
+          <div class="results-findings">
+            <h3>🔍 Compliance Findings &amp; Sources</h3>
+            <div id="findingsList"></div>
+          </div>
+
+          <div class="alerts-section">
+            <h3>📲 Alerts Triggered</h3>
+            <div id="alertsList"></div>
+          </div>
+
+          <div class="results-actions">
+            <a href="dashboard.html" class="btn btn-primary">View Full Dashboard →</a>
+            <button class="btn btn-secondary" onclick="resetForm()">← Run Another Analysis</button>
+          </div>
+        </div>
+
+        <!-- Form panel (hidden after submit) -->
+        <div id="formPanel">
+
+          <h2 style="font-size:20px;font-weight:700;margin-bottom:8px;">Analyse Your Compliance</h2>
+          <p style="color:var(--muted);font-size:14px;margin-bottom:24px;">
+            Choose how to provide your company data — we'll run a full AI-powered gap analysis.
+          </p>
+
+          <!-- ── Step 1: choose mode ───────────────────────────────────── -->
+          <div class="mode-picker">
+            <div class="mode-card active" data-mode="sample" onclick="setMode('sample')">
+              <div class="mode-card-icon">🏢</div>
+              <div class="mode-card-title">Sample Partner</div>
+              <div class="mode-card-sub">Pick from 22 real EcoComply companies</div>
+            </div>
+            <div class="mode-card" data-mode="upload" onclick="setMode('upload')">
+              <div class="mode-card-icon">📂</div>
+              <div class="mode-card-title">Upload Dataset</div>
+              <div class="mode-card-sub">JSON or CSV portfolio file</div>
+            </div>
+            <div class="mode-card" data-mode="manual" onclick="setMode('manual')">
+              <div class="mode-card-icon">✏️</div>
+              <div class="mode-card-title">Enter Manually</div>
+              <div class="mode-card-sub">Fill in your company details</div>
+            </div>
+          </div>
+
+          <!-- ── Mode: Sample partner ──────────────────────────────────── -->
+          <div class="sample-picker active" id="modeSample">
+            <p style="font-size:13px;color:var(--muted);margin-bottom:14px;">
+              Select a company from the EcoComply portfolio — their full product data will be analysed against all 38 EU regulations.
+            </p>
+            <div class="sample-grid" id="sampleGrid">
+              <div style="color:var(--muted);font-size:13px;">Loading partners…</div>
+            </div>
+            <div id="selectedSampleInfo" style="display:none;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;margin-top:4px;font-size:13px;"></div>
+          </div>
+
+          <!-- ── Mode: Upload ──────────────────────────────────────────── -->
+          <div class="upload-section-new" id="modeUpload">
+            <div class="upload-tabs">
+              <button class="upload-tab active" data-tab="local">📁 Local File (JSON / CSV)</button>
+              <button class="upload-tab" data-tab="drive">☁️ Google Drive</button>
+              <button class="upload-tab" data-tab="onedrive">💼 OneDrive</button>
+            </div>
+            <div class="upload-pane active" id="pane-local">
+              <div class="dropzone" id="dropzone">
+                <div class="dropzone-icon">📂</div>
+                <p class="dropzone-text"><strong>Drag &amp; drop your JSON or CSV file here</strong><br>
+                  or click to browse<br>
+                  <span style="font-size:11px;color:var(--muted);margin-top:4px;display:block;">Accepts: partners.json · partners.csv · any portfolio JSON</span>
+                </p>
+                <input type="file" id="fileInput" accept=".json,.csv" class="dropzone-input" />
+              </div>
+              <div class="upload-status" id="uploadStatus"></div>
+            </div>
+            <div class="upload-pane" id="pane-drive">
+              <div class="cloud-upload-form">
+                <label class="field-label">Google Drive share link</label>
+                <input type="url" id="driveUrl" class="field-input" placeholder="https://drive.google.com/file/d/…" />
+                <button class="btn btn-secondary mt-8" onclick="uploadFromCloud('drive')">Load from Drive</button>
+                <p class="form-hint mt-4">File must be shared as "Anyone with link"</p>
+              </div>
+            </div>
+            <div class="upload-pane" id="pane-onedrive">
+              <div class="cloud-upload-form">
+                <label class="field-label">OneDrive share link</label>
+                <input type="url" id="onedriveUrl" class="field-input" placeholder="https://1drv.ms/…" />
+                <button class="btn btn-secondary mt-8" onclick="uploadFromCloud('onedrive')">Load from OneDrive</button>
+              </div>
+            </div>
+            <div id="uploadedPartnersWrap" style="display:none;margin-top:16px;">
+              <p style="font-size:13px;color:var(--muted);margin-bottom:8px;">Select which partner to analyse:</p>
+              <select class="field-input" id="uploadedPartnerSel" style="max-width:360px;"></select>
+            </div>
+          </div>
+
+          <!-- ── Mode: Manual ──────────────────────────────────────────── -->
+          <div class="manual-section" id="modeManual">
+            <div class="form-section">
+              <h2 class="form-section-title">Your Company</h2>
+              <div class="field-row">
+                <div class="field-group">
+                  <label class="field-label" for="companyName">Company name *</label>
+                  <input class="field-input" type="text" id="companyName" placeholder="AlphaVolt GmbH" />
+                </div>
+                <div class="field-group">
+                  <label class="field-label" for="contactName">Your name *</label>
+                  <input class="field-input" type="text" id="contactName" placeholder="Markus Bauer" />
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field-group">
+                  <label class="field-label" for="country">Country</label>
+                  <select class="field-input" id="country">
+                    <option>Germany</option><option>Netherlands</option><option>France</option>
+                    <option>Italy</option><option>Spain</option><option>Poland</option>
+                    <option>Sweden</option><option>Austria</option><option>Norway</option><option>Other EU</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label class="field-label" for="sector">Industry sector *</label>
+                  <select class="field-input" id="sector">
+                    <option value="">— Select sector —</option>
+                    <option>Electronics</option><option>Consumer Electronics</option>
+                    <option>Renewable Energy</option><option>Automotive / EV</option>
+                    <option>Medical Devices</option><option>Packaging</option>
+                    <option>Chemical / Materials</option><option>Lighting</option>
+                    <option>Energy Storage</option><option>Networking</option>
+                    <option>Wearables</option><option>Industrial IoT</option><option>Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <h2 class="form-section-title">Product Categories *</h2>
+              <p class="form-hint" style="margin-bottom:10px;">Select all that apply to your portfolio</p>
+              <div class="tag-selector" id="productSelector">
+                <button type="button" class="tag-btn" data-val="led_lighting">💡 LED Lighting</button>
+                <button type="button" class="tag-btn" data-val="battery_pack">🔋 Battery Pack</button>
+                <button type="button" class="tag-btn" data-val="emobility_battery">🛵 E-Mobility Battery</button>
+                <button type="button" class="tag-btn" data-val="audio">🔊 Audio / Speakers</button>
+                <button type="button" class="tag-btn" data-val="smart_home">🏠 Smart Home</button>
+                <button type="button" class="tag-btn" data-val="wearable">⌚ Wearable</button>
+                <button type="button" class="tag-btn" data-val="medical_wearable">🩺 Medical Wearable</button>
+                <button type="button" class="tag-btn" data-val="toy_electronic">🧸 Electronic Toy</button>
+                <button type="button" class="tag-btn" data-val="cable">🔌 Cables</button>
+                <button type="button" class="tag-btn" data-val="display">🖥️ Display</button>
+                <button type="button" class="tag-btn" data-val="iot_module">📡 IoT Module</button>
+                <button type="button" class="tag-btn" data-val="pv_inverter">☀️ PV Inverter</button>
+                <button type="button" class="tag-btn" data-val="networking">📶 Networking</button>
+                <button type="button" class="tag-btn" data-val="appliance">🏠 Appliance</button>
+                <button type="button" class="tag-btn" data-val="power_supply">⚡ Power Supply</button>
+                <button type="button" class="tag-btn" data-val="printer_3d">🖨️ 3D Printer</button>
+                <button type="button" class="tag-btn" data-val="drone">🚁 Drone</button>
+              </div>
+            </div>
+            <div class="form-section">
+              <h2 class="form-section-title">Certifications held</h2>
+              <div class="tag-selector" id="certSelector">
+                <button type="button" class="tag-btn" data-val="CE">CE</button>
+                <button type="button" class="tag-btn" data-val="RoHS">RoHS</button>
+                <button type="button" class="tag-btn" data-val="REACH">REACH</button>
+                <button type="button" class="tag-btn" data-val="WEEE">WEEE</button>
+                <button type="button" class="tag-btn" data-val="RED">RED</button>
+                <button type="button" class="tag-btn" data-val="MDR">MDR</button>
+                <button type="button" class="tag-btn" data-val="ISO14001">ISO 14001</button>
+                <button type="button" class="tag-btn" data-val="Battery">Battery Reg</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Contact info (all modes) ──────────────────────────────── -->
+          <div class="contact-section">
+            <h3>📬 Alert Preferences</h3>
+            <div class="field-row">
+              <div class="field-group">
+                <label class="field-label" for="phone">Phone / WhatsApp</label>
+                <input class="field-input" type="tel" id="phone" placeholder="+49 151 0000000" />
+                <p class="field-hint">For WhatsApp &amp; SMS alerts</p>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="email">Email address</label>
+                <input class="field-input" type="email" id="email" placeholder="you@company.de" />
+                <p class="field-hint">For email alerts</p>
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="field-label">Alert channels</label>
+              <div class="checkbox-row" style="margin-top:6px;">
+                <label class="checkbox-label"><input type="checkbox" name="channels" value="whatsapp" checked /> WhatsApp</label>
+                <label class="checkbox-label"><input type="checkbox" name="channels" value="sms" /> SMS</label>
+                <label class="checkbox-label"><input type="checkbox" name="channels" value="email" /> Email</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Submit button ─────────────────────────────────────────── -->
+          <div class="form-submit">
+            <button class="btn btn-primary btn-xl btn-full" id="submitBtn" onclick="runAnalysis()">
+              <span id="submitText">🛡️ Run Compliance Analysis</span>
+              <span id="submitSpinner" class="spinner hidden"></span>
+            </button>
+            <p style="font-size:12px;color:var(--muted);margin-top:8px;text-align:center;">
+              HuggingFace Mistral-7B analyses your profile against 38 EU regulations and sends a real alert.
+            </p>
+          </div>
+
+        </div><!-- /formPanel -->
+      </div><!-- /onboard-form-wrap -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>🛡️ <strong>Regulatory Radar</strong> by EcoComply · IBM Bobathon 2025 · Powered by HuggingFace &amp; Twilio</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+  /* ── State ───────────────────────────────────────────────────────────── */
+  let _currentMode    = "sample";
+  let _selectedSample = null;   // full partner object
+  let _uploadedPartners = [];
+  let _uploadedFilePath = null;
+
+  /* ── Mode switcher ────────────────────────────────────────────────────── */
+  function setMode(mode) {
+    _currentMode = mode;
+    document.querySelectorAll(".mode-card").forEach(c => c.classList.toggle("active", c.dataset.mode === mode));
+    document.getElementById("modeSample").classList.toggle("active", mode === "sample");
+    document.getElementById("modeUpload").classList.toggle("active", mode === "upload");
+    document.getElementById("modeManual").classList.toggle("active", mode === "manual");
+    document.querySelector(".upload-section-new").classList.toggle("active", mode === "upload");
+    document.querySelector(".manual-section").classList.toggle("active", mode === "manual");
+  }
+
+  /* ── Load sample partners from API ───────────────────────────────────── */
+  document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      const d = await apiGet("/partners/");
+      const partners = d.partners || [];
+      const grid = document.getElementById("sampleGrid");
+      grid.innerHTML = partners.map(p => `
+        <div class="sample-card" data-id="${p.id}" onclick="selectSample('${p.id}')">
+          <div class="sc-name">${p.company_name}</div>
+          <div class="sc-meta">${p.country || ""} · ${p.sector || ""}</div>
+          <div class="sc-tags">
+            ${(p.product_categories || []).slice(0,3).map(c =>
+              `<span class="sc-tag">${c.replace(/_/g," ")}</span>`).join("")}
+          </div>
+        </div>`).join("");
+      window._allSamplePartners = partners;
+    } catch(e) {
+      document.getElementById("sampleGrid").innerHTML =
+        `<p style="color:var(--red);font-size:13px;">Failed to load partners: ${e.message}</p>`;
+    }
+
+    // Upload tabs
+    document.querySelectorAll(".upload-tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".upload-tab").forEach(t => t.classList.remove("active"));
+        document.querySelectorAll(".upload-pane").forEach(p => p.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById(`pane-${tab.dataset.tab}`).classList.add("active");
+      });
+    });
+
+    // Tag selectors
+    document.querySelectorAll("#productSelector .tag-btn, #certSelector .tag-btn").forEach(btn => {
+      btn.addEventListener("click", () => btn.classList.toggle("active"));
+    });
+
+    // Dropzone
+    const dz = document.getElementById("dropzone");
+    const fi = document.getElementById("fileInput");
+    dz.addEventListener("dragover",  e => { e.preventDefault(); dz.classList.add("dragover"); });
+    dz.addEventListener("dragleave", ()  => dz.classList.remove("dragover"));
+    dz.addEventListener("drop",      e  => { e.preventDefault(); dz.classList.remove("dragover"); if(e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]); });
+    fi.addEventListener("change",    ()  => { if(fi.files[0]) handleFile(fi.files[0]); });
+  });
+
+  /* ── Select sample partner ────────────────────────────────────────────── */
+  function selectSample(id) {
+    document.querySelectorAll(".sample-card").forEach(c => c.classList.toggle("active", c.dataset.id === id));
+    _selectedSample = (window._allSamplePartners || []).find(p => p.id === id);
+    const info = document.getElementById("selectedSampleInfo");
+    if (_selectedSample) {
+      const products = (_selectedSample.products || []).map(p => p.name).join(", ");
+      const gaps = (_selectedSample.compliance_status || {}).known_gaps || [];
+      info.style.display = "block";
+      info.innerHTML = `
+        <strong>${_selectedSample.company_name}</strong> · ${_selectedSample.country}<br>
+        <span style="color:var(--muted);">Products: ${products || "see portfolio"}</span>
+        ${gaps.length ? `<br><span style="color:var(--orange);font-size:12px;">⚠️ Known gaps: ${gaps[0]}</span>` : ""}`;
+    }
+  }
+
+  /* ── File upload (JSON or CSV) ─────────────────────────────────────────── */
+  async function handleFile(file) {
+    const ext = file.name.split(".").pop().toLowerCase();
+    const statusEl = document.getElementById("uploadStatus");
+    statusEl.className = "upload-status";
+    statusEl.textContent = `Processing ${file.name}…`;
+
+    const fd = new FormData();
+    fd.append("file", file);
+
+    const endpoint = ext === "csv" ? "/upload/portfolio-csv" : "/upload/portfolio";
+    try {
+      const res = await apiPostForm(endpoint, fd);
+      _uploadedFilePath = res.file_path;
+      // Both JSON (/portfolio → `preview`) and CSV (/portfolio-csv → `partners_preview`) are unified here
+      _uploadedPartners = res.partners_preview || res.preview || [];
+      statusEl.className = "upload-status success";
+      statusEl.textContent = `✅ Loaded ${res.partners_loaded} partner(s) from ${file.name}`;
+      toast(`Portfolio loaded: ${res.partners_loaded} partners`, "success");
+
+      // Populate partner selector — use whichever preview array the backend returned
+      const partnerList = res.partners_preview || res.preview || [];
+      const sel  = document.getElementById("uploadedPartnerSel");
+      const wrap = document.getElementById("uploadedPartnersWrap");
+      sel.innerHTML = partnerList.length
+        ? partnerList.map(p => `<option value="${p.id || p.partner_id || ''}">${p.company_name || p.company || p.id}</option>`).join("")
+        : `<option value="">All partners in file</option>`;
+      wrap.style.display = "block";
+    } catch (e) {
+      statusEl.className = "upload-status error";
+      statusEl.textContent = `❌ ${e.message}`;
+    }
+  }
+
+  async function uploadFromCloud(provider) {
+    const url = provider === "drive"
+      ? document.getElementById("driveUrl").value.trim()
+      : document.getElementById("onedriveUrl").value.trim();
+    if (!url) { toast("Please enter a URL", "error"); return; }
+    const statusEl = document.getElementById("uploadStatus");
+    statusEl.className = "upload-status"; statusEl.textContent = "Fetching from cloud…";
+    document.querySelector("[data-tab='local']").click();
+    try {
+      const res = await apiPost("/upload/drive", { url });
+      _uploadedFilePath = res.file_path;
+      statusEl.className = "upload-status success";
+      statusEl.textContent = `✅ Loaded ${res.partners_loaded} partner(s)`;
+      toast(`Portfolio loaded: ${res.partners_loaded} partners`, "success");
+    } catch (e) {
+      statusEl.className = "upload-status error";
+      statusEl.textContent = `❌ ${e.message}`;
+    }
+  }
+
+  /* ── Main submit ──────────────────────────────────────────────────────── */
+  async function runAnalysis() {
+    const btn      = document.getElementById("submitBtn");
+    const text     = document.getElementById("submitText");
+    const spinner  = document.getElementById("submitSpinner");
+    const phone    = document.getElementById("phone").value.trim();
+    const email    = document.getElementById("email").value.trim();
+    const channels = Array.from(document.querySelectorAll("[name='channels']:checked")).map(c => c.value);
+
+    // Validate based on mode
+    if (_currentMode === "sample" && !_selectedSample) {
+      toast("Please select a sample partner first.", "error"); return;
+    }
+    if (_currentMode === "upload" && !_uploadedFilePath) {
+      toast("Please upload a file first.", "error"); return;
+    }
+    if (_currentMode === "manual") {
+      const cn = document.getElementById("companyName").value.trim();
+      const nm = document.getElementById("contactName").value.trim();
+      const sc = document.getElementById("sector").value;
+      const cats = Array.from(document.querySelectorAll("#productSelector .tag-btn.active")).map(b => b.dataset.val);
+      if (!cn || !nm || !sc) { toast("Fill in company name, contact name and sector.", "error"); return; }
+      if (!cats.length) { toast("Select at least one product category.", "error"); return; }
+    }
+    // For sample mode, fall back to the partner's own contact details if the form fields are empty
+    const effectivePhone = phone || (_currentMode === "sample" && _selectedSample ? _selectedSample.phone || _selectedSample.whatsapp || "" : "");
+    const effectiveEmail = email || (_currentMode === "sample" && _selectedSample ? _selectedSample.email || "" : "");
+    if (!effectivePhone && !effectiveEmail) { toast("Please provide a phone number or email for the alert.", "error"); return; }
+
+    text.classList.add("hidden"); spinner.classList.remove("hidden"); btn.disabled = true;
+
+    try {
+      let res;
+
+      if (_currentMode === "sample") {
+        // Use the full partner object from the preloaded dataset
+        const p = _selectedSample;
+        const payload = {
+          company_name:       p.company_name,
+          contact_name:       p.contact_name,
+          email:              email || p.email,
+          phone:              phone || p.phone,
+          whatsapp:           phone || p.whatsapp || p.phone,
+          country:            p.country,
+          sector:             p.sector,
+          product_categories: p.product_categories || [],
+          substances:         p.substances || [],
+          certifications:     p.certifications || [],
+          products:           p.products || [],
+          sells_in:           p.sells_in || ["EU"],
+          eu_market:          p.eu_market !== false,
+          alert_channels:     channels,
+          source_partner_id:  p.id,
+        };
+        res = await apiPost("/partners/onboard", payload);
+        // Also get detailed findings for this partner from the findings engine
+        try {
+          const f = await apiGet(`/findings/${p.id}?include_fp=false`);
+          res._findings = f.findings || [];
+        } catch {}
+
+      } else if (_currentMode === "upload") {
+        // Run findings against the uploaded file (portfolio_path from upload response)
+        if (!_uploadedFilePath) {
+          toast("Please upload a file first.", "error");
+          return;
+        }
+        res = await apiPost("/findings/run", {
+          portfolio_path: _uploadedFilePath,
+          use_llm: false,
+          include_fp: false,
+        });
+        res._findings = res.findings || [];
+        const meta = res.meta || {};
+        const totalF = meta.total_findings || 0;
+        // Compute real severity distribution to avoid always showing "critical"
+        const highCount   = (res._findings).filter(f => f.severity === "high").length;
+        const medCount    = (res._findings).filter(f => f.severity === "medium").length;
+        const dominantSev = highCount > medCount ? "high" : medCount > 0 ? "medium" : totalF > 0 ? "low" : "low";
+        const riskScore   = Math.min(95, Math.round(highCount * 8 + medCount * 4 + (totalF - highCount - medCount) * 2));
+        res.message = res.message || `Uploaded dataset: ${totalF} compliance gaps found across ${meta.partners_analysed || 0} partners.`;
+        res.risk_assessment = {
+          risk_level: riskScore >= 70 ? "high" : riskScore >= 35 ? "medium" : "low",
+          risk_score: riskScore,
+          summary: `Analysis found ${totalF} compliance gaps — ${highCount} high, ${medCount} medium severity. ${meta.false_positives || 0} false positives filtered.`,
+        };
+        res.regulations_matched = meta.regulations_checked || 0;
+
+      } else {
+        // Manual entry
+        const payload = {
+          company_name:       document.getElementById("companyName").value.trim(),
+          contact_name:       document.getElementById("contactName").value.trim(),
+          email:              email,
+          phone:              phone,
+          whatsapp:           phone,
+          country:            document.getElementById("country").value,
+          sector:             document.getElementById("sector").value,
+          product_categories: Array.from(document.querySelectorAll("#productSelector .tag-btn.active")).map(b => b.dataset.val),
+          certifications:     Array.from(document.querySelectorAll("#certSelector .tag-btn.active")).map(b => b.dataset.val),
+          eu_market:          true,
+          alert_channels:     channels,
+        };
+        res = await apiPost("/partners/onboard", payload);
+      }
+
+      showResults(res);
+    } catch (err) {
+      toast(`Error: ${err.message}`, "error");
+    } finally {
+      text.classList.remove("hidden"); spinner.classList.add("hidden"); btn.disabled = false;
+    }
+  }
+
+  /* ── Show results ─────────────────────────────────────────────────────── */
+  function showResults(res) {
+    document.getElementById("formPanel").style.display = "none";
+    const panel = document.getElementById("resultsPanel");
+    panel.classList.add("active");
+    panel.scrollIntoView({ behavior: "smooth" });
+
+    document.getElementById("resultsIntro").textContent = res.message || "";
+
+    // Risk badge
+    const risk  = res.risk_assessment || {};
+    const level = risk.risk_level || "medium";
+    const badge = document.getElementById("riskBadge");
+    badge.className = `risk-badge ${level}`;
+    badge.textContent = `${level.toUpperCase()} RISK`;
+    document.getElementById("riskScoreLabel").textContent =
+      `Risk score: ${risk.risk_score || 0}/100 · ${res.regulations_matched || 0} regulation(s) matched`;
+    document.getElementById("riskSummary").textContent =
+      risk.summary || "AI-powered compliance analysis complete.";
+
+    // ── Findings with source citations ─────────────────────────────────────
+    const findingsEl = document.getElementById("findingsList");
+    // Merge findings from onboard alerts + _findings engine
+    const findingsFromAlerts = (res.alerts_triggered || []).map(a => ({
+      regulation_title: a.regulation || "",
+      regulation_id:    a.regulation_id || "",
+      gap:              a.fix?.immediate_action || "",
+      deadline:         a.fix?.days_to_deadline ? `${a.fix.days_to_deadline} days` : "",
+      severity:         a.urgency || "medium",
+      source_url:       a.fix?.resources?.[0]?.url || "#",
+      llm_reasoning:    a.message_preview || "",
+      score:            a.score,
+    }));
+    const findings = res._findings && res._findings.length
+      ? res._findings.slice(0, 8)
+      : findingsFromAlerts.slice(0, 6);
+
+    if (!findings.length) {
+      findingsEl.innerHTML = `<p style="color:var(--muted);font-size:13px;">No specific compliance gaps detected for this profile.</p>`;
+    } else {
+      findingsEl.innerHTML = findings.map(f => {
+        const sev = f.severity || "medium";
+        const src = f.source_url || "#";
+        const srcLabel = src.includes("eur-lex") ? "eur-lex.europa.eu"
+                       : src.includes("echa")    ? "echa.europa.eu"
+                       : src !== "#" ? (() => { try { return new URL(src).hostname; } catch { return "source"; } })() : "—";
+        return `
+          <div class="finding-card">
+            <div class="finding-card-header">
+              <span class="finding-reg-name">${f.regulation_title || f.regulation || ""}</span>
+              <span class="finding-sev ${sev}">${sev.toUpperCase()}</span>
+            </div>
+            ${f.gap ? `<div class="finding-gap">${f.gap}</div>` : ""}
+            ${f.llm_reasoning && f.llm_reasoning !== f.gap ? `
+              <div class="finding-llm">
+                <div class="finding-llm-label">🤖 AI Analysis</div>
+                ${f.llm_reasoning}
+              </div>` : ""}
+            <div class="finding-meta">
+              ${f.deadline ? `<span class="finding-deadline">📅 ${f.deadline}</span>` : ""}
+              ${src !== "#" ? `<a class="finding-source" href="${src}" target="_blank" rel="noopener">📄 ${srcLabel} ↗</a>` : ""}
+              ${f.recommended_action ? `<span style="color:var(--muted);">→ ${f.recommended_action.slice(0,80)}</span>` : ""}
+            </div>
+          </div>`;
+      }).join("");
+    }
+
+    // ── Alert results ──────────────────────────────────────────────────────
+    const alertsEl = document.getElementById("alertsList");
+    const alertItems = (res.alerts_triggered || []).flatMap(a =>
+      (a.alert_results || []).map(r => ({ ...r, regulation: a.regulation }))
+    );
+    if (!alertItems.length) {
+      alertsEl.innerHTML = `<p style="color:var(--muted);font-size:13px;">No alerts triggered (no contact info provided, or demo mode).</p>`;
+    } else {
+      const icons = { whatsapp: "💬", sms: "📱", email: "✉️" };
+      alertsEl.innerHTML = alertItems.map(a => `
+        <div class="alert-item">
+          <div class="alert-icon">${icons[a.channel] || "📢"}</div>
+          <div class="alert-detail">
+            <div>
+              <strong>${(a.channel || "").toUpperCase()}</strong>
+              <span class="alert-status" style="margin-left:8px;">
+                ${a.status === "sent" ? "✅ Delivered" : a.status === "demo_sent" ? "🔵 Demo Sent" : "❌ Failed"}
+              </span>
+            </div>
+            <div class="alert-preview">${a.to || a.error || ""}</div>
+          </div>
+        </div>`).join("");
+    }
+  }
+
+  /* ── Reset ────────────────────────────────────────────────────────────── */
+  function resetForm() {
+    document.getElementById("formPanel").style.display = "block";
+    const panel = document.getElementById("resultsPanel");
+    panel.classList.remove("active");
+    _selectedSample = null;
+    _uploadedFilePath = null;
+    document.querySelectorAll(".sample-card").forEach(c => c.classList.remove("active"));
+    document.getElementById("selectedSampleInfo").style.display = "none";
+    window.scrollTo(0, 0);
+  }
+  </script>
+</body>
+</html>

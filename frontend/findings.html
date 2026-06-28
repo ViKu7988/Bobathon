@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compliance Findings — Regulatory Radar</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/findings.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-logo">🛡️</span>
+        <span class="nav-name">Regulatory<strong>Radar</strong></span>
+        <span class="nav-badge">by EcoComply</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="onboard.html"  class="nav-link">Get Started</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="findings.html" class="nav-link active">Findings</a>
+        <a href="pipeline.html" class="nav-link">Pipeline</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html"    class="nav-link">Home</a>
+    <a href="onboard.html"  class="nav-link">Get Started</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="findings.html" class="nav-link">Findings</a>
+    <a href="pipeline.html" class="nav-link">Pipeline</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container ph-findings">
+      <div>
+        <h1>Compliance Findings</h1>
+        <p>Sorted by deadline · Gap · Severity · Source</p>
+      </div>
+      <div class="findings-header-actions">
+        <button class="btn btn-secondary" id="btnLoadSample" onclick="loadSampleDataset()">
+          📂 Load Sample Dataset
+        </button>
+        <button class="btn btn-secondary" id="btnScrape" onclick="runScrape()">
+          🌐 Live Scrape
+        </button>
+        <button class="btn btn-primary" id="btnRunLLM" onclick="runWithLLM()">
+          🤖 Run + LLM Reasoning
+        </button>
+        <button class="btn btn-danger" id="btnDispatch" onclick="runAlertDispatch()" style="display:none;">
+          ⚡ RUN ALERT DISPATCH
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="container findings-main">
+
+    <!-- ── KPI strip ───────────────────────────────────────────────────────── -->
+    <div class="f-kpi-strip" id="fKpiStrip">
+      <div class="f-kpi">
+        <div class="f-kpi-n" id="fKpiTotal">—</div>
+        <div class="f-kpi-l">Total Findings</div>
+      </div>
+      <div class="f-kpi f-kpi-red">
+        <div class="f-kpi-n" id="fKpiHigh">—</div>
+        <div class="f-kpi-l">HIGH</div>
+      </div>
+      <div class="f-kpi f-kpi-orange">
+        <div class="f-kpi-n" id="fKpiMed">—</div>
+        <div class="f-kpi-l">MEDIUM</div>
+      </div>
+      <div class="f-kpi f-kpi-green">
+        <div class="f-kpi-n" id="fKpiLow">—</div>
+        <div class="f-kpi-l">LOW</div>
+      </div>
+      <div class="f-kpi f-kpi-gray">
+        <div class="f-kpi-n" id="fKpiFP">—</div>
+        <div class="f-kpi-l">False Positives filtered</div>
+      </div>
+    </div>
+
+    <!-- ── Filter bar ──────────────────────────────────────────────────────── -->
+    <div class="f-filter-bar">
+      <div class="f-filter-group">
+        <label>SEVERITY</label>
+        <select id="filterSev" onchange="applyFilters()">
+          <option value="">All</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <div class="f-filter-group f-filter-wide">
+        <label>REGULATION</label>
+        <select id="filterReg" onchange="applyFilters()">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="f-filter-group f-filter-wide">
+        <label>COMPANY</label>
+        <select id="filterCompany" onchange="applyFilters()">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="f-filter-group">
+        <label>SHOW FALSE POSITIVES</label>
+        <label class="f-toggle">
+          <input type="checkbox" id="showFP" onchange="applyFilters()"/>
+          <span class="f-toggle-track"></span>
+        </label>
+      </div>
+      <div class="f-filter-count" id="filterCount">— findings</div>
+    </div>
+
+    <!-- ── Table + Side Panel layout ─────────────────────────────────────── -->
+    <div class="f-layout" id="fLayout">
+
+      <!-- Main table -->
+      <div class="f-table-wrap" id="fTableWrap">
+        <table class="f-table" id="fTable">
+          <thead>
+            <tr>
+              <th class="col-company">COMPANY / PRODUCT</th>
+              <th class="col-reg">REGULATION</th>
+              <th class="col-gap">GAP</th>
+              <th class="col-sev">SEVERITY</th>
+              <th class="col-dl">DEADLINE</th>
+              <th class="col-action">ACTION</th>
+              <th class="col-source">SOURCE</th>
+            </tr>
+          </thead>
+          <tbody id="fTableBody">
+            <tr><td colspan="7" class="f-empty-row">
+              <div class="f-empty-state">
+                <div style="font-size:32px;margin-bottom:12px;">🛡️</div>
+                <strong>No findings loaded yet</strong>
+                <p>Click <strong>Load Sample Dataset</strong> to analyse the EcoComply partner portfolio,<br>
+                or <strong>Run + LLM Reasoning</strong> to generate AI-cited gap explanations.</p>
+              </div>
+            </td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Side panel (hidden until row click) -->
+      <div class="f-side-panel" id="fSidePanel">
+        <div class="f-side-close" onclick="closeSidePanel()">✕</div>
+        <div id="fSidePanelContent">
+          <p class="loading-msg">Select a finding row to inspect details.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── LLM status toast ────────────────────────────────────────────────── -->
+    <div class="f-llm-banner hidden" id="fLLMBanner">
+      <span id="fLLMBannerText"></span>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>🛡️ <strong>Regulatory Radar</strong> by EcoComply · IBM Bobathon 2025 ·
+         Powered by HuggingFace (Mistral-7B) &amp; Twilio</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/findings.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

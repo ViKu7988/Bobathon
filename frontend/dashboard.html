@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compliance Dashboard — Regulatory Radar</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/dashboard.css"/>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-logo">🛡️</span>
+        <span class="nav-name">Regulatory<strong>Radar</strong></span>
+        <span class="nav-badge">by EcoComply</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-link">Home</a>
+        <a href="onboard.html"   class="nav-link">Get Started</a>
+        <a href="dashboard.html" class="nav-link active">Dashboard</a>
+        <a href="findings.html" class="nav-link">Findings</a>
+        <a href="pipeline.html"  class="nav-link">Pipeline</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile nav drawer -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="onboard.html"   class="nav-link">Get Started</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="findings.html" class="nav-link">Findings</a>
+        <a href="pipeline.html"  class="nav-link">Pipeline</a>
+    <a href="onboard.html"   class="btn btn-primary">Try Live Demo</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container ph-flex">
+      <div>
+        <h1>Compliance Dashboard</h1>
+        <p>Portfolio risk overview · Live EU regulation monitoring</p>
+      </div>
+      <!-- Language picker -->
+      <div class="lang-picker">
+        <label class="field-label" style="margin-bottom:4px;">Alert language</label>
+        <select id="langSelect" class="field-input" style="width:auto;">
+          <option value="en">🇬🇧 English</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="it">🇮🇹 Italiano</option>
+          <option value="pl">🇵🇱 Polski</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <main class="container dashboard-main">
+
+    <!-- ── KPI strip ──────────────────────────────────────────────────────── -->
+    <div class="kpi-strip" id="kpiStrip">
+      <div class="kpi">            <div class="kpi-n" id="kpiPartners">—</div><div class="kpi-l">Partners Tracked</div></div>
+      <div class="kpi kpi-red">   <div class="kpi-n" id="kpiCritical">—</div><div class="kpi-l">Critical Risk</div></div>
+      <div class="kpi kpi-orange"><div class="kpi-n" id="kpiHigh">—</div>    <div class="kpi-l">High Risk</div></div>
+      <div class="kpi kpi-green"> <div class="kpi-n" id="kpiCompliant">—</div><div class="kpi-l">Low Risk</div></div>
+      <div class="kpi kpi-purple"><div class="kpi-n" id="kpiExposure">—</div> <div class="kpi-l">Est. Fine Exposure</div></div>
+    </div>
+
+    <!-- ── Partner selector bar ───────────────────────────────────────────── -->
+    <div class="dash-card selector-card">
+      <div class="dash-card-header" style="margin-bottom:12px;">
+        <h2>Select a Partner to inspect</h2>
+        <div class="dash-legend">
+          <span class="legend-dot critical"></span>Critical
+          <span class="legend-dot high"></span>High
+          <span class="legend-dot medium"></span>Medium
+          <span class="legend-dot low"></span>Low
+        </div>
+      </div>
+      <!-- Demo quick-pick buttons -->
+      <div class="partner-quick-btns" id="partnerQuickBtns">
+        <div class="loading-msg">Loading partners…</div>
+      </div>
+      <p class="form-hint" style="margin-top:8px;">
+        Click a partner card to inspect their full risk profile, fix suggestions, and send a live alert.
+      </p>
+    </div>
+
+    <!-- ── Selected partner detail ────────────────────────────────────────── -->
+    <div class="dash-card hidden" id="partnerDetail">
+      <div id="partnerDetailContent"></div>
+    </div>
+
+    <!-- ── Portfolio Risk Financial Dashboard ─────────────────────────────── -->
+    <div class="dash-card">
+      <div class="dash-card-header">
+        <h2>📊 Portfolio Risk &amp; Financial Exposure</h2>
+        <button class="btn btn-sm" onclick="loadPortfolioRisk()">↻ Refresh</button>
+      </div>
+      <div id="riskDashboard"><div class="loading-msg">Loading risk data…</div></div>
+    </div>
+
+    <!-- ── Compliance Findings (inline, sorted by deadline) ──────────────── -->
+    <div class="dash-card" id="findingsCard">
+      <div class="dash-card-header">
+        <h2>🔍 Compliance Findings — Sorted by Deadline</h2>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <span class="badge" id="findingsCount">—</span>
+          <label style="font-size:12px;display:flex;align-items:center;gap:5px;cursor:pointer;">
+            <input type="checkbox" id="showFPDash" onchange="renderFindingsTable()"/>
+            Show false positives
+          </label>
+          <button class="btn btn-sm" onclick="loadFindings()">↻ Refresh</button>
+        </div>
+      </div>
+      <!-- Filter row -->
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+        <select class="field-input" id="fSevFilter" onchange="renderFindingsTable()" style="height:32px;font-size:12px;width:auto;min-width:100px;">
+          <option value="">All severity</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <select class="field-input" id="fRegFilter" onchange="renderFindingsTable()" style="height:32px;font-size:12px;width:auto;min-width:160px;">
+          <option value="">All regulations</option>
+        </select>
+        <select class="field-input" id="fCoFilter"  onchange="renderFindingsTable()" style="height:32px;font-size:12px;width:auto;min-width:160px;">
+          <option value="">All companies</option>
+        </select>
+      </div>
+      <div id="findingsTableWrap" style="overflow-x:auto;">
+        <div class="loading-msg">Loading compliance findings…</div>
+      </div>
+    </div>
+
+    <!-- ── Live Monitoring Feed ───────────────────────────────────────────── -->
+    <div class="dash-card" id="liveMonitorCard">
+      <div class="dash-card-header">
+        <h2>🟢 Live Regulatory Monitoring</h2>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <span class="badge" id="liveChangeBadge" style="background:#dcfce7;color:#16a34a;">Checking…</span>
+          <button class="btn btn-sm" onclick="loadLiveMonitor()">↻ Poll Now</button>
+        </div>
+      </div>
+      <div id="liveMonitorContent">
+        <div class="loading-msg">Connecting to EUR-Lex &amp; ECHA feeds…</div>
+      </div>
+    </div>
+
+    <!-- ── Two column: regulations + alert log ───────────────────────────── -->
+    <div class="dash-two-col">
+      <div class="dash-card">
+        <div class="dash-card-header">
+          <h2>Active Regulations</h2>
+          <span class="badge" id="regCount">—</span>
+        </div>
+        <div class="reg-list" id="regList"><div class="loading-msg">Loading…</div></div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-card-header">
+          <h2>Alert Audit Log</h2>
+          <button class="btn btn-sm" onclick="refreshAlertLog()">↻ Refresh</button>
+        </div>
+        <div class="alert-log-list" id="alertLogList">
+          <div class="loading-msg">No alerts yet. Select a partner and send one →</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>🛡️ <strong>Regulatory Radar</strong> by EcoComply · IBM Bobathon 2025 · Powered by HuggingFace &amp; Twilio</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

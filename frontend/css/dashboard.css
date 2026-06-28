@@ -1,0 +1,90 @@
+/* dashboard.css — extra styles for the compliance dashboard
+   EcoComply | IBM Bobathon 2025 */
+
+/* Page header flex */
+.ph-flex { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.lang-picker { display:flex; flex-direction:column; gap:2px; }
+.kpi-purple  { border-top:3px solid #7c3aed; }
+.kpi-purple .kpi-n { color:#7c3aed; }
+
+/* Partner quick-pick selector */
+.selector-card { padding-bottom:16px; }
+.partner-quick-btns { display:flex; flex-wrap:wrap; gap:10px; }
+.pq-btn {
+  display:flex; flex-direction:column; gap:3px;
+  padding:10px 14px; border-radius:8px; border:2px solid var(--border);
+  background:var(--bg); cursor:pointer; transition:all .15s; text-align:left;
+  min-width:130px;
+}
+.pq-btn:hover          { box-shadow:var(--shadow-md); transform:translateY(-1px); }
+.pq-btn.active         { border-color:var(--accent); background:#f0f4ff; }
+.pq-btn.risk-critical  { border-top:3px solid var(--red); }
+.pq-btn.risk-high      { border-top:3px solid var(--orange); }
+.pq-btn.risk-medium    { border-top:3px solid var(--yellow); }
+.pq-btn.risk-low       { border-top:3px solid var(--green); }
+.pq-name  { font-size:13px; font-weight:600; }
+.pq-sector{ font-size:11px; color:var(--muted); }
+.pq-risk  { font-size:11px; font-weight:700; margin-top:2px; }
+.pq-btn.risk-critical .pq-risk { color:var(--red); }
+.pq-btn.risk-high     .pq-risk { color:var(--orange); }
+.pq-btn.risk-medium   .pq-risk { color:var(--yellow); }
+.pq-btn.risk-low      .pq-risk { color:var(--green); }
+
+/* Partner detail panel */
+.pd-header { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:20px; flex-wrap:wrap; }
+.pd-title  { font-size:20px; font-weight:700; }
+.pd-sub    { font-size:13px; color:var(--muted); margin-top:3px; }
+.pd-meta   { display:grid; grid-template-columns:1fr 1fr; gap:8px; font-size:13px; margin-bottom:20px; }
+.pd-meta-item strong { color:var(--muted); font-weight:500; }
+
+.pd-tabs   { display:flex; gap:4px; border-bottom:2px solid var(--border); margin-bottom:20px; }
+.pd-tab    { padding:8px 16px; border:none; background:none; font-size:13px; font-weight:500;
+             color:var(--muted); cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-2px; }
+.pd-tab.active { color:var(--accent); border-bottom-color:var(--accent); }
+
+.pd-pane   { display:none; }
+.pd-pane.active { display:block; }
+
+/* Fix steps */
+.fix-step-list { display:flex; flex-direction:column; gap:10px; margin:12px 0; }
+.fix-step { display:flex; gap:12px; padding:12px 14px; border:1px solid var(--border); border-radius:8px; }
+.fix-step-n { width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff;
+              display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; flex-shrink:0; }
+.fix-step-body { flex:1; }
+.fix-step-action { font-size:14px; font-weight:500; }
+.fix-step-meta   { font-size:12px; color:var(--muted); margin-top:3px; }
+
+.priority-bar { height:8px; border-radius:4px; background:var(--border); overflow:hidden; margin-top:4px; }
+.priority-fill { height:100%; border-radius:4px; transition:width .4s; }
+.pf-critical { background:var(--red); }
+.pf-high     { background:var(--orange); }
+.pf-medium   { background:var(--yellow); }
+.pf-low      { background:var(--green); }
+
+/* Send alert form inside partner detail */
+.alert-send-form { background:var(--surface); border-radius:8px; padding:16px; margin-top:12px; }
+.alert-send-form h3 { font-size:14px; font-weight:600; margin-bottom:12px; }
+
+/* Portfolio risk table */
+.risk-table-wrap { overflow-x:auto; margin-top:12px; }
+.risk-table { width:100%; border-collapse:collapse; font-size:13px; }
+.risk-table th { background:var(--surface); padding:9px 12px; border:1px solid var(--border); font-weight:600; text-align:left; white-space:nowrap; }
+.risk-table td { padding:9px 12px; border:1px solid #f0f0f0; vertical-align:middle; }
+.risk-table tr:hover td { background:#fafbff; }
+.risk-table .exposure { font-weight:700; color:var(--accent); }
+.risk-row-critical td:first-child { border-left:3px solid var(--red); }
+.risk-row-high     td:first-child { border-left:3px solid var(--orange); }
+.risk-row-medium   td:first-child { border-left:3px solid var(--yellow); }
+.risk-row-low      td:first-child { border-left:3px solid var(--green); }
+
+/* Alert log ack */
+.ack-btn { font-size:11px; padding:2px 8px; border-radius:4px; border:1px solid var(--border);
+           background:var(--surface); cursor:pointer; color:var(--muted); }
+.ack-btn:hover { background:var(--green); color:#fff; border-color:var(--green); }
+.acked-badge   { font-size:11px; color:var(--green); font-weight:600; }
+
+@media(max-width:600px) {
+  .partner-quick-btns { gap:8px; }
+  .pq-btn { min-width:100px; padding:8px 10px; }
+  .ph-flex { flex-direction:column; align-items:flex-start; }
+}

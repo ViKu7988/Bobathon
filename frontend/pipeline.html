@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipeline Runner — Regulatory Radar</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-logo">🛡️</span>
+        <span class="nav-name">Regulatory<strong>Radar</strong></span>
+        <span class="nav-badge">by EcoComply</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="onboard.html"  class="nav-link">Get Started</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="findings.html" class="nav-link">Findings</a>
+        <a href="pipeline.html" class="nav-link active">Pipeline</a>
+      </div>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile nav drawer -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="onboard.html"   class="nav-link">Get Started</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="pipeline.html"  class="nav-link">Pipeline</a>
+    <a href="onboard.html"   class="btn btn-primary">Try Live Demo</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+      <div>
+        <h1>Pipeline Runner</h1>
+        <p>Monitor → Understand → Match → Alert — watch every step live</p>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button class="btn btn-secondary" onclick="loadSampleAndRun()">
+          📂 Load Sample Dataset
+        </button>
+        <a class="btn btn-secondary" href="findings.html">
+          🔍 View Findings →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container pipeline-main">
+    <!-- ── Controls ───────────────────────────────────────────────────────── -->
+    <div class="pipeline-controls dash-card">
+      <h2>Run Configuration</h2>
+      <div class="field-row">
+        <div class="field-group">
+          <label class="field-label">Alert channels</label>
+          <div class="checkbox-row">
+            <label class="checkbox-label"><input type="checkbox" id="ch_whatsapp" value="whatsapp" checked /> WhatsApp</label>
+            <label class="checkbox-label"><input type="checkbox" id="ch_sms" value="sms" /> SMS</label>
+            <label class="checkbox-label"><input type="checkbox" id="ch_email" value="email" /> Email</label>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Fetch mode</label>
+          <div class="checkbox-row">
+            <label class="checkbox-label"><input type="radio" name="fetchMode" value="snapshot" checked /> Pre-loaded snapshots (reliable)</label>
+            <label class="checkbox-label"><input type="radio" name="fetchMode" value="live" /> Live EUR-Lex RSS</label>
+          </div>
+        </div>
+        <div class="field-group">
+          <label class="field-label">Send real alerts?</label>
+          <div class="checkbox-row">
+            <label class="checkbox-label"><input type="radio" name="sendMode" value="dry" checked /> Dry run (no real sends)</label>
+            <label class="checkbox-label"><input type="radio" name="sendMode" value="real" /> Send real alerts</label>
+          </div>
+        </div>
+      </div>
+      <div class="pipeline-run-actions">
+        <button class="btn btn-primary btn-lg" onclick="runFullPipeline()">
+          ▶ Run Full Pipeline
+        </button>
+        <div class="trigger-select-row">
+          <span>or trigger one regulation:</span>
+          <select class="field-input" id="triggerRegId" style="width:auto;min-width:260px;">
+            <option value="">— Loading regulations… —</option>
+          </select>
+          <button class="btn btn-secondary" onclick="triggerRegulation()">⚡ Trigger</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Step-by-step progress ──────────────────────────────────────────── -->
+    <div class="pipeline-steps dash-card">
+      <h2>Pipeline Steps</h2>
+      <div class="step-pipeline">
+        <div class="pipeline-step" id="pstep1">
+          <div class="pstep-num">1</div>
+          <div class="pstep-body">
+            <div class="pstep-title">📡 Monitor</div>
+            <div class="pstep-desc">Fetching EUR-Lex / ECHA updates</div>
+            <div class="pstep-detail hidden" id="pstep1-detail"></div>
+          </div>
+          <div class="pstep-status" id="pstep1-status">⬜</div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step" id="pstep2">
+          <div class="pstep-num">2</div>
+          <div class="pstep-body">
+            <div class="pstep-title">🤖 Understand</div>
+            <div class="pstep-desc">IBM Bob parsing regulations</div>
+            <div class="pstep-detail hidden" id="pstep2-detail"></div>
+          </div>
+          <div class="pstep-status" id="pstep2-status">⬜</div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step" id="pstep3">
+          <div class="pstep-num">3</div>
+          <div class="pstep-body">
+            <div class="pstep-title">🎯 Match</div>
+            <div class="pstep-desc">Matching rules to partners</div>
+            <div class="pstep-detail hidden" id="pstep3-detail"></div>
+          </div>
+          <div class="pstep-status" id="pstep3-status">⬜</div>
+        </div>
+        <div class="pipeline-connector"></div>
+        <div class="pipeline-step" id="pstep4">
+          <div class="pstep-num">4</div>
+          <div class="pstep-body">
+            <div class="pstep-title">📲 Alert</div>
+            <div class="pstep-desc">Sending notifications</div>
+            <div class="pstep-detail hidden" id="pstep4-detail"></div>
+          </div>
+          <div class="pstep-status" id="pstep4-status">⬜</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Results ────────────────────────────────────────────────────────── -->
+    <div class="dash-card hidden" id="pipelineResults">
+      <div class="dash-card-header">
+        <h2>Pipeline Results</h2>
+        <div class="pipeline-summary-badges" id="pipelineBadges"></div>
+      </div>
+      <div id="pipelineResultsBody"></div>
+    </div>
+
+    <!-- ── Trigger results ─────────────────────────────────────────────────── -->
+    <div class="dash-card hidden" id="triggerResults">
+      <div class="dash-card-header">
+        <h2>Trigger Results</h2>
+      </div>
+      <div id="triggerResultsBody"></div>
+    </div>
+
+    <!-- ── Test alert ─────────────────────────────────────────────────────── -->
+    <div class="dash-card">
+      <h2>🔔 Send Test Alert</h2>
+      <p class="form-hint">Verify your Twilio integration is working before the demo.</p>
+      <div class="field-row">
+        <div class="field-group">
+          <label class="field-label">Channel</label>
+          <select class="field-input" id="testChannel" style="width:auto;">
+            <option value="whatsapp">WhatsApp</option>
+            <option value="sms">SMS</option>
+            <option value="email">Email</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label">To (phone or email)</label>
+          <input type="text" class="field-input" id="testTo" placeholder="+49151xxxxxx or you@email.com" />
+        </div>
+        <div class="field-group" style="align-self:flex-end;">
+          <button class="btn btn-secondary" onclick="sendTestAlert()">Send Test</button>
+        </div>
+      </div>
+      <div class="test-alert-result hidden" id="testAlertResult"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>🛡️ <strong>Regulatory Radar</strong> by EcoComply · IBM Bobathon 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pipeline.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+  // Load real regulation list into trigger dropdown
+  document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      const d   = await apiGet("/regulations/");
+      const sel = document.getElementById("triggerRegId");
+      sel.innerHTML = '<option value="">— Select regulation —</option>';
+      (d.regulations || []).forEach(r => {
+        const o = document.createElement("option");
+        o.value       = r.id;
+        o.textContent = `${r.id} · ${(r.regulation_title||r.short_name||r.title||"").slice(0,55)}`;
+        sel.appendChild(o);
+      });
+    } catch {}
+  });
+
+  async function loadSampleAndRun() {
+    const btn = event.currentTarget;
+    btn.disabled = true; btn.textContent = "📂 Loading…";
+    try {
+      await apiPost("/findings/load-sample", {});
+      toast("Sample dataset loaded! Redirecting to Findings…", "success");
+      setTimeout(() => window.location = "findings.html", 1200);
+    } catch (e) {
+      toast("Error: " + e.message, "error");
+    } finally {
+      btn.disabled = false; btn.textContent = "📂 Load Sample Dataset";
+    }
+  }
+  </script>
+</body>
+</html>
